@@ -1,0 +1,6 @@
+@import 'general';
+
+.auth-left-content-wrapper{background-color: $gray;border-radius: 0.75rem;
+    @include rem-fallback(padding,114,113,20,40);max-width:42rem;}
+
+body{padding:1.875rem}
