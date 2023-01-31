@@ -118,10 +118,7 @@ p {
 		@include rem-fallback(line-height,24);
 	}
 
-/*@include bp(sm-max){
-@include rem-fallback(font-size,14);
-@include rem-fallback(line-height,22);
-}*/
+
 }
 
 i,em{
