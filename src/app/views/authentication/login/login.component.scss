@@ -1,0 +1,9 @@
+@import "general";
+.authentication-page{display:flex;background-color:$white;@include rem-fallback(padding,20);}
+.auth-right-block{position: relative;
+    //  width:calc(100% - 420px);
+    width:60%;
+     
+     display:flex;flex-direction:column; align-items:center;justify-content:center;@include rem-fallback(padding,50);}
+.auth-right-block .auth-logo{display:block;width:70%;margin-left:auto;margin-right:auto; @include rem-fallback(margin-bottom,50)}
+.auth-right-block .auth-logo img{width:100%}

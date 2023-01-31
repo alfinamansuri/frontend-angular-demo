@@ -36,7 +36,21 @@ $school_angular-demo-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'Poppins', sans-serif; }
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+@import "general";
+
+.orange-btn {border-color:transparent;outline:0; width:100%;@include rem-fallback(min-height,56); background-color:$orange;color:$white;@include rem-fallback(border-radius,6);@include rem-fallback(margin-bottom,20)}
+.auth-link{font-weight:600; color:$gray-text;@include rem-fallback(font-size,16);@include rem-fallback(line-height,24);font-weight:400;}
+
+.password-link{color:$gray-text}
+.forgot-password{color:$orange}
+.form-group{@include rem-fallback(margin-bottom,25);}
+.form-group label{@include rem-fallback(margin-bottom,8);display:inline-block;@include rem-fallback(font-size,14);font-weight:400;color:$light-black;}
+.form-group .form-control{color:$dark-gary;border:1px solid $input-border;@include rem-fallback(min-height,56);}
+
+.form-bottom{display: flex;flex-direction:column;justify-content: center;align-items: center;}
+
+.rights-text {margin-bottom:0; position: absolute;bottom:0px;left:50%;transform:translateX(-50%); color:$light-black-text;@include rem-fallback(font-size,14);font-weight:500;@include rem-fallback(line-height,24)}
