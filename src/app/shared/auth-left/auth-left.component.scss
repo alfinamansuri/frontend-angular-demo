@@ -1,6 +1,19 @@
 @import 'general';
 
-.auth-left-content-wrapper{background-color: $gray;border-radius: 0.75rem;
+.auth-left-content-wrapper{background: rgba(246, 245, 253, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0.75rem;background-image: url(../../../assets/images/left-auth-bg.jpg);
     @include rem-fallback(padding,114,113,20,40);max-width:42rem;}
+    
+.auth-left-content-wrapper h2{color:$light-black}   
+.auth-left-content-wrapper h2 span{display:inline-block;color:$orange}
+
+.white-btn{border:1px solid }
+
+.auth-left-content-wrapper .point-listing li{display:flex;align-items: center;}
+.auth-left-content-wrapper .point-listing li i{display:inline-block;margin-right:0.3rem}
+.auth-left-content-wrapper .point-listing li i img{display:block;width:100%}
+.auth-left-content-wrapper .point-listing li p{margin-bottom:0;}
+
 
 body{padding:1.875rem}

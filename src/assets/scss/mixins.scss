@@ -86,7 +86,7 @@
 }
 
 @function strip-unit($num) {
-	@return $num / 10;
+	@return $num / 16;
 }
 
 @mixin rem-fallback($property, $values...) {

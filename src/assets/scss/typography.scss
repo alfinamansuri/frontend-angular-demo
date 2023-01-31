@@ -29,7 +29,7 @@ h1 {
 
 h2{
 	@include rem-fallback(font-size,30);
-	@include rem-fallback(line-height,45);
+	@include rem-fallback(line-height,40);
 	@include rem-fallback(padding,0,0,22);
 	font-weight:500;
 	
@@ -109,7 +109,7 @@ h6{
 
 p {
 	@include rem-fallback(font-size,18);
-	@include rem-fallback(line-height,25);
+	@include rem-fallback(line-height,22);
 	@include rem-fallback(margin,0,0,16);
 	
 	font-weight: 300;
