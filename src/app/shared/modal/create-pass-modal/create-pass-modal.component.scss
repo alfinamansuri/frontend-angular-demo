@@ -1,0 +1,13 @@
+@import "general";
+
+
+.create-pass-modal{position: relative; @include rem-fallback(padding,50);text-align:center;background-color:$white;@include rem-fallback(border-radius,12);}
+.create-pass-modal i{display:inline-block;@include rem-fallback(width,50);@include rem-fallback(margin-bottom,20)}
+.create-pass-modal h3{@include rem-fallback(margin-bottom,20);padding-bottom:0;}
+.create-pass-modal p{display:block;@include rem-fallback(margin-bottom,20);}
+.modal-btn{@include rem-fallback(min-width,181);width:auto;}
+.create-pass-modal .close{@include rem-fallback(width,15);@include rem-fallback(height,15); background-color:transparent;position:absolute;@include rem-fallback(top,15);@include rem-fallback(right,0);}
+.create-pass-modal .close:hover{background-color:white;}
+.create-pass-modal .close img{@include rem-fallback(width,12);}
+.mat-mdc-focus-indicator,.mat-mdc-button-touch-target{display:none !important;}
+.create-pass-modal .close .mdc-button__ripple:before,.create-pass-modal .close span,.mat-ripple-element{display:none !important}
