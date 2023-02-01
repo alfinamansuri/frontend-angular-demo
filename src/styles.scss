@@ -72,7 +72,7 @@ body { margin: 0; font-family:'Poppins', sans-serif; }
 
 
 /* custom-checkbox*/
-.custom-checkbox{@include rem-fallback(margin,15,0,15,0);}
+.custom-checkbox{@include rem-fallback(margin,30,0,30,0);}
 .custom-checkbox .mdc-checkbox .mdc-checkbox__background{left:0 !important;top:7px !important; border:1px solid $input-border;@include rem-fallback(width,15);@include rem-fallback(height,15);}
 .custom-checkbox label{font-weight:400;color:$light-black;@include rem-fallback(font-size,14);@include rem-fallback(line-height,21);}
 .custom-checkbox.mat-mdc-checkbox.mat-accent .mdc-checkbox--selected ~ .mdc-checkbox__ripple{background: $orange !important;}

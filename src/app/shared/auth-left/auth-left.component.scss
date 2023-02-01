@@ -17,8 +17,8 @@
 
 .white-btn{border:1px solid }
 
-.auth-left-content-wrapper .point-listing li{display:flex;align-items: center;margin-bottom:1rem}
-.auth-left-content-wrapper .point-listing li i{display:inline-block;@include rem-fallback(margin-right,10);}
+.auth-left-content-wrapper .point-listing li{display:flex;align-items: flex-start;margin-bottom:1rem}
+.auth-left-content-wrapper .point-listing li i{display:inline-block;@include rem-fallback(margin,7,10,0,0);}
 .auth-left-content-wrapper .point-listing li i img{display:block;width:100%}
 .auth-left-content-wrapper .point-listing li p{margin-bottom:0;}
 .border-btn{transition:0.3s all; background-color: rgba(255, 255, 255, 0.3);border: 2px solid rgba(247, 143, 30, 0.2);@include rem-fallback(margin-top,15); @include rem-fallback(padding,9,15);@include rem-fallback(font-size,16); @include rem-fallback(border-radius,2);font-weight:600;background-color:transparent}
