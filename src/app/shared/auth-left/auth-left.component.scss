@@ -5,7 +5,7 @@
 .auth-left-content-wrapper{background: rgba(246, 245, 253, 0.5);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0.75rem;background-image: url(../../../assets/images/left-auth-bg.jpg);
-    @include rem-fallback(padding,70,80,20,40);
+    @include rem-fallback(padding,70,140,20,40);
     // max-width:42rem;
     // width:90%;
 
