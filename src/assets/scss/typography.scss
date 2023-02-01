@@ -108,7 +108,7 @@ h6{
 }
 
 p {
-	@include rem-fallback(font-size,18);
+	@include rem-fallback(font-size,16);
 	@include rem-fallback(line-height,22);
 	@include rem-fallback(margin,0,0,16);
 	

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -16,10 +18,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    NgbModule
+    NgbModule,
+    // MatButtonModule,
+    
   ],
   exports:[
-    SharedModule
+    SharedModule,
+    // MatButtonModule,
+  
   ],
 
   providers: [],

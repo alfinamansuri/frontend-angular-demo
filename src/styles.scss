@@ -42,15 +42,45 @@ body { margin: 0; font-family: 'Poppins', sans-serif; }
 @import 'bootstrap/scss/bootstrap';
 @import "general";
 
-.orange-btn {border-color:transparent;outline:0; width:100%;@include rem-fallback(min-height,56); background-color:$orange;color:$white;@include rem-fallback(border-radius,6);@include rem-fallback(margin-bottom,20)}
-.auth-link{font-weight:600; color:$gray-text;@include rem-fallback(font-size,16);@include rem-fallback(line-height,24);font-weight:400;}
+html, body { height: 100%; }
+body { margin: 0; font-family:'Poppins', sans-serif; }
+
+
+.orange-btn {border-color:transparent !important;outline:0 !important; width:100%;@include rem-fallback(min-height,56);@include rem-fallback(font-size,18); background-color:$orange !important;color:$white !important;@include rem-fallback(border-radius,6); @include rem-fallback(margin-bottom,20)}
+.orange-btn:hover{border:1px solid $orange !important;background-color:transparent !important;color:$orange !important}
+.orange-btn span:before{display:none;}
+.auth-link{position: relative; text-decoration:none; font-weight:600; color:$gray-text;@include rem-fallback(font-size,16);@include rem-fallback(margin-bottom,5); @include rem-fallback(line-height,24);font-weight:400;}
+.auth-link:after{content:"";width:0;height:1px;background-color:$orange;transition:0.3s all;position:absolute;left:0;bottom:0; }
+.auth-link:hover:after{width:100%;}
+.auth-link:hover{color:$orange}
+
 
 .password-link{color:$gray-text}
 .forgot-password{color:$orange}
-.form-group{@include rem-fallback(margin-bottom,25);}
+.form-group-wrapper .form-group:last-child{margin-bottom:0;}
+.form-group{@include rem-fallback(margin-bottom,30);}
 .form-group label{@include rem-fallback(margin-bottom,8);display:inline-block;@include rem-fallback(font-size,14);font-weight:400;color:$light-black;}
-.form-group .form-control{color:$dark-gary;border:1px solid $input-border;@include rem-fallback(min-height,56);}
+.form-group .form-control{color:$dark-gary;border:1px solid $input-border;@include rem-fallback(padding,10,15);@include rem-fallback(min-height,56);@include rem-fallback(font-size,16);}
+.form-group .form-control:focus{border-color:$orange}
+.form-group .form-control::placeholder{color:$dark-gary}
+.form-group .form-control:focus{outline:0;box-shadow:none;}
 
 .form-bottom{display: flex;flex-direction:column;justify-content: center;align-items: center;}
 
+
 .rights-text {margin-bottom:0; position: absolute;bottom:0px;left:50%;transform:translateX(-50%); color:$light-black-text;@include rem-fallback(font-size,14);font-weight:500;@include rem-fallback(line-height,24)}
+
+
+/* custom-checkbox*/
+.custom-checkbox{@include rem-fallback(margin,15,0,15,0);}
+.custom-checkbox .mdc-checkbox .mdc-checkbox__background{left:0 !important;top:7px !important; border:1px solid $input-border;@include rem-fallback(width,15);@include rem-fallback(height,15);}
+.custom-checkbox label{font-weight:400;color:$light-black;@include rem-fallback(font-size,14);@include rem-fallback(line-height,21);}
+.custom-checkbox.mat-mdc-checkbox.mat-accent .mdc-checkbox--selected ~ .mdc-checkbox__ripple{background: $orange !important;}
+.custom-checkbox.mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background{border-color:$orange !important;background-color:$orange !important;}
+.custom-checkbox.mat-mdc-checkbox .mdc-checkbox{padding-right:0 !important;padding-left:0 !important;padding-top:0 !important}
+.mat-ripple-element,.mdc-checkbox__ripple{display: none !important;}
+// .mat-mdc-checkbox.mat-accent .mdc-checkbox--selected ~ .mat-mdc-checkbox-ripple .mat-ripple-element{display:none !important;}
+// .mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control:not([disabled]):focus~.mdc-checkbox__ripple{opacity: 0 !important;}
+// ::ng-deep .mat-slide-toggle-ripple {
+//   display: none;
+// }

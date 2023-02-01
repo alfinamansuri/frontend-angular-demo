@@ -1,6 +1,8 @@
 
 <div class="authentication-page">
+<div class="auth-left-wrapper">
 <app-auth-left></app-auth-left>
+</div>
 <div class="auth-right-block">
     <div class="auth-right-block-inner">
     <div class="auth-logo">
@@ -8,6 +10,7 @@
     </div>
     <div class="form-block">
         <h2>Sign in</h2>
+        <div class="form-group-wrapper">
         <div class="form-group">
             <label>Email</label>
             <input stype="" class="form-control" placeholder="Enter your Email">
@@ -16,17 +19,22 @@
             <label>Password</label>
             <input stype="" class="form-control" placeholder="Enter your password">
         </div>
-        <!-- <mat-checkbox>Check me!</mat-checkbox> -->
+
+    </div>
+        <mat-checkbox class="custom-checkbox"> Remember me</mat-checkbox>
+
+        
+
         <button mat-button class="orange-btn">
             sign in
         </button>
         <div class="form-bottom">
-        <a href="#" title="Don’t have your password?" class="password-link auth-link">Don’t have your password?
-            </a>
+        <span class="password-link auth-link">Don’t have your password?
+        </span>
         <a href="" title="Forgot Password" class="forgot-password auth-link">Forgot Password</a>
     </div>
     </div>
     </div>
-    <p class="rights-text">All rights reserved by School-links | ©2023</p>
+    <p class="auth-footer">All rights reserved by <a href="#" title="School-links" class="auth-footer-link">School-links</a> | ©2023</p>
 </div>
 </div>
