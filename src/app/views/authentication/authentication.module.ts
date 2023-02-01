@@ -9,11 +9,13 @@ import { CreatePassowrdComponent } from './create-passowrd/create-passowrd.compo
 
 
 
+
+
 @NgModule({
   declarations: [
     LoginComponent,
     ForgotPassowrdComponent,
-    CreatePassowrdComponent
+    CreatePassowrdComponent,
   ],
   imports: [
     CommonModule,
