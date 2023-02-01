@@ -49,7 +49,7 @@ body { margin: 0; font-family:'Poppins', sans-serif; }
 .orange-btn {border-color:transparent !important;outline:0 !important; width:100%;@include rem-fallback(min-height,56);@include rem-fallback(font-size,18); background-color:$orange !important;color:$white !important;@include rem-fallback(border-radius,6); @include rem-fallback(margin-bottom,20)}
 .orange-btn:hover{border:1px solid $orange !important;background-color:transparent !important;color:$orange !important}
 .orange-btn span:before{display:none;}
-.auth-link{position: relative; text-decoration:none; font-weight:600; color:$gray-text;@include rem-fallback(font-size,16);@include rem-fallback(margin-bottom,5); @include rem-fallback(line-height,24);font-weight:400;}
+.auth-link{font-weight:600; position: relative; text-decoration:none; font-weight:600; color:$gray-text;@include rem-fallback(font-size,16);@include rem-fallback(margin-bottom,5); @include rem-fallback(line-height,24);}
 .auth-link:after{content:"";width:0;height:1px;background-color:$orange;transition:0.3s all;position:absolute;left:0;bottom:0; }
 .auth-link:hover:after{width:100%;}
 .auth-link:hover{color:$orange}
