@@ -9,5 +9,15 @@
 .create-pass-modal .close{@include rem-fallback(width,15);@include rem-fallback(height,15); background-color:transparent;position:absolute;@include rem-fallback(top,15);@include rem-fallback(right,0);}
 .create-pass-modal .close:hover{background-color:white;}
 .create-pass-modal .close img{@include rem-fallback(width,12);}
-.mat-mdc-focus-indicator,.mat-mdc-button-touch-target{display:none !important;}
-.create-pass-modal .close .mdc-button__ripple:before,.create-pass-modal .close span,.mat-ripple-element{display:none !important}
+// .mat-mdc-focus-indicator,.mat-mdc-button-touch-target{display:none !important;}
+// .create-pass-modal .close .mdc-button__ripple:before,.create-pass-modal .close span,.mat-ripple-element{display:none !important}
+// .mat-mdc-button .mat-mdc-button-persistent-ripple::before,
+// .mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before, 
+// .mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before, 
+// .mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{display:none !important;}
+// .mat-mdc-button .mat-mdc-button-persistent-ripple::before, 
+// .mat-mdc-unelevated-button .mat-mdc-button-persistent-ripple::before, 
+// .mat-mdc-raised-button .mat-mdc-button-persistent-ripple::before,
+// .mat-mdc-outlined-button .mat-mdc-button-persistent-ripple::before{display:none !important}
+// .mat-mdc-button-persistent-ripple.mdc-button__ripple{display:none;}
+// .mat-mdc-button .mat-mdc-button-persistent-ripple::before{display: none !important;}

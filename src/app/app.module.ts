@@ -6,13 +6,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { MatRippleModule } from '@angular/material';
+// import { MAT_RIPPLE_GLOBAL_OPTIONS } from '@angular/material';
+import { MAT_RIPPLE_GLOBAL_OPTIONS } from '@angular/material/core';
 
-// import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -20,16 +23,25 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserAnimationsModule,
     SharedModule,
     NgbModule,
-    // MatButtonModule,
+    // MAT_RIPPLE_GLOBAL_OPTIONS,
     
   ],
+
+  bootstrap: [AppComponent],
+  providers: [
+    {provide: MAT_RIPPLE_GLOBAL_OPTIONS, useValue: {disabled: true}}
+  ],
+
+
+
   exports:[
     SharedModule,
-    // MatButtonModule,
+    // MatRippleModule,
+    // MAT_RIPPLE_GLOBAL_OPTIONS,
   
   ],
 
-  providers: [],
-  bootstrap: [AppComponent]
+
+ 
 })
 export class AppModule { }
