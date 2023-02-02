@@ -78,7 +78,7 @@ body { margin: 0; font-family:'Poppins', sans-serif; }
 .custom-checkbox.mat-mdc-checkbox.mat-accent .mdc-checkbox--selected ~ .mdc-checkbox__ripple{background: $orange !important;}
 .custom-checkbox.mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background{border-color:$orange !important;background-color:$orange !important;}
 .custom-checkbox.mat-mdc-checkbox .mdc-checkbox{padding-right:0 !important;padding-left:0 !important;padding-top:0 !important}
-// .mat-ripple-element,.mdc-checkbox__ripple{display: none !important;}
+.mat-ripple-element,.mdc-checkbox__ripple{display: none !important;}
 // .mat-mdc-checkbox.mat-accent .mdc-checkbox--selected ~ .mat-mdc-checkbox-ripple .mat-ripple-element{display:none !important;}
 // .mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control:not([disabled]):focus~.mdc-checkbox__ripple{opacity: 0 !important;}
 // ::ng-deep .mat-slide-toggle-ripple {
