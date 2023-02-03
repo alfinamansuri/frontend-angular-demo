@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { MySchoolRoutingModule } from './my-school-routing.module';
 import { MySchoolComponent } from './my-school.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { MySchoolPageComponent } from './my-school-page/my-school-page.component';
 
 
 @NgModule({
   declarations: [
     MySchoolComponent,
+    MySchoolPageComponent,
    
   ],
   imports: [
@@ -19,6 +21,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
   ],
   exports: [
     MySchoolComponent,
+    MySchoolPageComponent
   ],
 })
 export class MySchoolModule { }

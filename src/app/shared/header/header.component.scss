@@ -1,4 +1,17 @@
 @import "general";
 
-.header{position:fixed;left:0;right:0;top:0;z-index:2;}
-.header .mat-toolbar{@include rem-fallback(padding,15);}
+.header{position:sticky;left:0;right:0;top:0;z-index:2;}
+.header .header-inner{display:flex;justify-content:space-between;background-color:$white;}
+.header .header-left{display:flex;flex-wrap:wrap;align-items:center}
+.header .header-left .sidebar-toggle{@include rem-fallback(margin-right,8); @include rem-fallback(width,30);@include rem-fallback(height,30);padding:0}
+.header .header-left .sidebar-toggle .mdc-icon-button__ripple,.header .header-left .sidebar-toggle .mdc-icon-button__ripple:before{display:none !important}
+.header .header-left .sidebar-toggle.mat-mdc-icon-button:hover .mat-mdc-button-persistent-ripple::before{opacity:0 !important;}
+.header .header .mat-toolbar{@include rem-fallback(padding,15);}
+.header .admin-profile{display:flex;justify-content:space-between;}
+.header .admin-profile i{display:inline-block;@include rem-fallback(margin-right,7);}
+.header .admin-name{display:flex;flex-direction:column; }
+.header .header-right .school-name{display:flex;justify-content:flex-start;align-items: center;}
+.header .header-right .school-name i{display:inline-block;@include rem-fallback(margin-right,6);}
+.header .header-right .school-name span{display:inline-block;@include rem-fallback(font-size,18);@include rem-fallback(line-height,27);color:$blue;font-weight:500;}
+.header .admin-name .bold-name{@include rem-fallback(font-size,14);@include rem-fallback(line-height,21);font-weight:600;color:$light-black}
+.header .admin-name .email{@include rem-fallback(font-size,12);@include rem-fallback(line-height,18);font-weight:400;color:$light-black}

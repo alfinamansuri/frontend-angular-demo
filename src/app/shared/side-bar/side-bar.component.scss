@@ -1,10 +1,11 @@
 @import "general";
 
-.side-bar-section,.side-bar-container{height:100%;}
-.side-bar-section .side-bar-sidenav{border:0; @include rem-fallback(padding,20);overflow:inherit !important;}
-.side-bar-logo{display:block;@include rem-fallback(max-width,204);width:auto;@include rem-fallback(margin-bottom,30);}
-.side-bar-logo img{width:100%}
-.side-bar-section ul{@include rem-fallback(margin-bottom,20);}
+.side-bar-container{height:100%;}
+// ::ng-deep .side-bar-container .side-bar-sidenav{display:block !important; transform:none !important;visibility:visible !important; border:0; @include rem-fallback(padding,20);overflow:inherit !important;}
+::ng-deep .side-bar-container .side-bar-sidenav{@include rem-fallback(padding,20);border-right:0;}
+.side-bar-section .side-bar-logo{display:block;@include rem-fallback(max-width,204);width:auto;@include rem-fallback(margin-bottom,30);}
+.side-bar-section .side-bar-logo img{width:100%}
+.side-bar-section .side-bar-container ul{@include rem-fallback(margin-bottom,20);}
 .side-bar-section ul li a{display:flex;align-items: center; @include rem-fallback(padding,15);display:block;text-decoration:none;}
 
 .side-bar-section ul li a span{display:inline-block;  color:$light-black;@include rem-fallback(font-size,16);@include rem-fallback(line-height,24);font-weight:400;}
@@ -24,3 +25,5 @@
 .side-bar-footer .logout-btn i img{width:100%}
 .side-bar-footer p{@include rem-fallback(font-size,14);@include rem-fallback(line-height,18);font-weight:400;color:$light-black; }
 .side-bar-footer p a{color:$light-black;}
+
+.mat-drawer-content{@include rem-fallback(margin-left,208);}

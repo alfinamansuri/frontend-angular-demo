@@ -35,15 +35,13 @@ $school_angular-demo-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Poppins', sans-serif; }
+
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 @import "general";
-
 html, body { height: 100%; }
-body { margin: 0; font-family:'Poppins', sans-serif; }
+body { margin: 0; font-family: 'Poppins', sans-serif; color:$light-black;@include rem-fallback(font-size,18) }
 
 
 .primary-btn {border-color:transparent !important;outline:0 !important; width:100%;@include rem-fallback(min-height,56);@include rem-fallback(font-size,18); background-color:$orange !important;color:$white !important;@include rem-fallback(border-radius,6); @include rem-fallback(margin-bottom,20)}
@@ -55,15 +53,30 @@ body { margin: 0; font-family:'Poppins', sans-serif; }
 .auth-link:hover{color:$orange}
 
 
+
+.secondary-btn{@include rem-fallback(border-radius,6);border:1px solid transparent !important;
+  @include rem-fallback(min-height,56);@include rem-fallback(max-width,291);@include rem-fallback(font-size,16);font-weight:500;}
+  .secondary-btn i{display:inline-block;@include rem-fallback(margin-right,5);@include rem-fallback(width,15);}
+
+  .secondary-btn i img{width:100%} 
+.red-btn{background-color: $red !important;color:$white !important;}
+// .red-btn:hover{border-color:$red !important;color:$red !important;background-color:$gray-1 !important;}
+.pink-btn{background-color: $light-pink !important;color:$orange !important;}
+// .pink-btn:hover{border-color:$orange !important;color:$red !important;background-color: $gray-1 !important;}
+
+
+
+
+
 .password-link{color:$gray-text}
 .forgot-password{color:$orange}
 .form-group-wrapper .form-group:last-child{margin-bottom:0;}
 .form-group{@include rem-fallback(margin-bottom,30);}
 .form-group label{@include rem-fallback(margin-bottom,8);display:inline-block;@include rem-fallback(font-size,14);font-weight:400;color:$light-black;}
-.form-group .form-control{color:$dark-gary;border:1px solid $input-border;@include rem-fallback(padding,10,15);@include rem-fallback(min-height,56);@include rem-fallback(font-size,16);}
-.form-group .form-control:focus{border-color:$orange}
-.form-group .form-control::placeholder{color:$dark-gary}
-.form-group .form-control:focus{outline:0;box-shadow:none;}
+.form-control{transition: all 0.3s; color:$dark-gary;border:1px solid $input-border;@include rem-fallback(padding,10,15);@include rem-fallback(min-height,56);@include rem-fallback(font-size,16);}
+.form-control:focus{border-color:$orange}
+.form-control::placeholder{color:$dark-gary}
+.form-control:focus{outline:0;box-shadow:none;}
 
 .form-bottom{display: flex;flex-direction:column;justify-content: center;align-items: center;}
 
@@ -84,3 +97,6 @@ body { margin: 0; font-family:'Poppins', sans-serif; }
 // ::ng-deep .mat-slide-toggle-ripple {
 //   display: none;
 // }
+
+.side-bar-toggle {position:absolute !important;top:10px;opacity:0;z-index:7;}
+.inner-pages{@include rem-fallback(padding,15);background-color:$gray-1;}

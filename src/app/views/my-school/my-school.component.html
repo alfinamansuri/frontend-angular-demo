@@ -1,6 +1,21 @@
 
-<app-side-bar></app-side-bar>
-<app-header></app-header>
+<!-- <app-side-bar></app-side-bar> -->
+<!-- <app-header></app-header> -->
+<mat-drawer-container class="side-bar-container" autosize>
+    <mat-drawer #drawer class="side-bar-sidenav" opened="true" mode="side">
+        <app-side-bar></app-side-bar>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-header></app-header>
+        <div class="example-sidenav-content">
+            <button type="button" class="side-bar-toggle" mat-button (click)="drawer.toggle()">
+              Toggle sidenav
+            </button>
+          </div>
+        <app-my-school-page>
 
+        </app-my-school-page>
+    </mat-drawer-content>
+</mat-drawer-container>
 
 
