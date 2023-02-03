@@ -1,0 +1,4 @@
+@import "general";
+
+.header{position:fixed;left:0;right:0;top:0;z-index:2;}
+.header .mat-toolbar{@include rem-fallback(padding,15);}

@@ -6,9 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-// import { MatRippleModule } from '@angular/material';
-// import { MAT_RIPPLE_GLOBAL_OPTIONS } from '@angular/material';
 import { MAT_RIPPLE_GLOBAL_OPTIONS } from '@angular/material/core';
+
 
 
 
@@ -23,8 +22,7 @@ import { MAT_RIPPLE_GLOBAL_OPTIONS } from '@angular/material/core';
     BrowserAnimationsModule,
     SharedModule,
     NgbModule,
-    // MAT_RIPPLE_GLOBAL_OPTIONS,
-    
+  
   ],
 
   bootstrap: [AppComponent],
@@ -36,8 +34,7 @@ import { MAT_RIPPLE_GLOBAL_OPTIONS } from '@angular/material/core';
 
   exports:[
     SharedModule,
-    // MatRippleModule,
-    // MAT_RIPPLE_GLOBAL_OPTIONS,
+    // MatIconModule,
   
   ],
 

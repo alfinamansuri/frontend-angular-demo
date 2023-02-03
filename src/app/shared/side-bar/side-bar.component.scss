@@ -1,0 +1,26 @@
+@import "general";
+
+.side-bar-section,.side-bar-container{height:100%;}
+.side-bar-section .side-bar-sidenav{border:0; @include rem-fallback(padding,20);overflow:inherit !important;}
+.side-bar-logo{display:block;@include rem-fallback(max-width,204);width:auto;@include rem-fallback(margin-bottom,30);}
+.side-bar-logo img{width:100%}
+.side-bar-section ul{@include rem-fallback(margin-bottom,20);}
+.side-bar-section ul li a{display:flex;align-items: center; @include rem-fallback(padding,15);display:block;text-decoration:none;}
+
+.side-bar-section ul li a span{display:inline-block;  color:$light-black;@include rem-fallback(font-size,16);@include rem-fallback(line-height,24);font-weight:400;}
+.side-bar-section ul li.active a span{color:$white}
+.side-bar-section ul li.active{background-color:$blue;@include rem-fallback(border-radius,6);}
+.side-bar-section ul li i{ @include rem-fallback(width,20);@include rem-fallback(height,20); display:inline-block;@include rem-fallback(margin-right,10);}
+.side-bar-section ul li i img{width:100%}
+// .side-bar-sidenav .mat-drawer-inner-container{overflow:visible !important;}
+.side-bar-section .side-bar-sidenav .mat-drawer-inner-container{overflow:visible !important;}
+
+
+
+// .side-bar-footer{position:fixed;bottom:0}
+.side-bar-footer .logout-btn{@include rem-fallback(margin-bottom,20);width:100%; @include rem-fallback(font-size,16); background-color:$light-blue !important;color:$blue !important;}
+.side-bar-footer .logout-btn:hover{border-color:$blue !important;}
+.side-bar-footer .logout-btn i{display:inline-block;@include rem-fallback(margin-right,8);@include rem-fallback(width,16);}
+.side-bar-footer .logout-btn i img{width:100%}
+.side-bar-footer p{@include rem-fallback(font-size,14);@include rem-fallback(line-height,18);font-weight:400;color:$light-black; }
+.side-bar-footer p a{color:$light-black;}

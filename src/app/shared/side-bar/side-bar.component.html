@@ -1,0 +1,37 @@
+
+<div class="side-bar-section">
+    <mat-drawer-container class="side-bar-container" autosize>
+        <mat-drawer #drawer class="side-bar-sidenav" mode="side">
+          <!-- <p>Auto-resizing sidenav</p>
+          <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+          <button (click)="showFiller = !showFiller" mat-raised-button>
+            Toggle extra text
+          </button> -->
+          <a href="#" class="side-bar-logo" title=""><img src="./assets/images/right-auth-logo.png" alt=""></a>
+          <ul>
+            <li class="active"><a href="#" title="Home"><i><img src="./assets/images/home.svg" alt=""></i><span>Home</span></a></li>
+            <li><a href="#" title="My Schools"><i><img src="./assets/images/school.svg" alt=""></i><span>My Schools</span></a></li>
+            <li><a href="#" title="Messages"><i><img src="./assets/images/message.svg" alt=""></i><span>Messages</span></a></li>
+            <li><a href="#" title="Groups"><i><img src="./assets/images/people.svg" alt=""></i><span>Groups</span></a></li>
+            <li><a href="#" title="Users and Roles"><i><img src="./assets/images/admin.svg" alt=""></i><span>Users and Roles</span></a></li>
+            <li><a href="#" title="School Details"><i><img src="./assets/images/news.svg" alt=""></i><span>School Details</span></a></li>
+            <li><a href="#" title="Data Management"><i><img src="./assets/images/data.svg" alt=""></i><span>Data Management</span></a></li>
+            <li><a href="#" title="My Account"><i><img src="./assets/images/my-acc.svg" alt=""></i><span>My Account</span></a></li>
+            <li><a href="#" title="Contacts and Help"><i><img src="./assets/images/contact.svg" alt=""></i><span>Contacts and Help</span></a></li>
+        </ul>
+
+        <div class="side-bar-footer">
+            <button mat-button class="logout-btn primary-btn"><i><img src="./assets/images/logout.svg" alt=""></i><span>Logout</span></button>
+            <p><a href="#" title="School-links">School-links</a>| ©2023</p>
+        </div>
+        </mat-drawer>
+        
+      
+        <div class="example-sidenav-content">
+          <button type="button" mat-button (click)="drawer.toggle()">
+            Toggle sidenav
+          </button>
+        </div>
+    </mat-drawer-container>
+
+</div>
