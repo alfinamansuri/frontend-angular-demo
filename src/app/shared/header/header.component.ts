@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  clickEvent() {
+  
+    var body = document.body;
+    body.classList.toggle("side-bar-close");
+}
+      
 }

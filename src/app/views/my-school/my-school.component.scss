@@ -1,0 +1,147 @@
+@import 'general';
+.inner-pages{
+    transition:all 0.3s;
+}
+
+.my-school-header-inner{display:flex;justify-content:space-between;@include rem-fallback(margin-bottom,15);
+    .school-left-header{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+}
+
+.school-header-button{display: flex;flex-direction:column; }
+.school-header-button{
+    .secondary-btn{
+        @include rem-fallback(margin-bottom,15);
+        &:last-child{
+            margin-bottom:0;
+        }
+    }
+}
+
+::ng-deep .form-field {
+    .mat-mdc-form-field-infix {
+        position: relative;
+        i{
+            display:inline-block;position:absolute;@include rem-fallback(top,16);@include rem-fallback(left,10)
+        }
+        .form-control{@include rem-fallback(min-height,56)}
+    }
+}
+::ng-deep .mat-mdc-form-field-focus-overlay{
+    display:none;
+}
+.form-field {
+    @include rem-fallback(min-width,615);
+.form-control{
+    min-height:auto; @include rem-fallback(padding-left,35);
+    // @include rem-fallback(min-width,615);
+    color:$light-black;
+}
+}
+::ng-deep .mat-mdc-text-field-wrapper{
+    background-color:$white !important;
+}
+:ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+.mdc-line-ripple{
+    border-bottom: 0 !important; display:none !important;
+}
+}
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+.mdc-line-ripple{
+    &::before,&:after{
+        display:none !important;
+    }
+
+}
+}
+.my-school-block{
+    background-color: $white;
+    @include rem-fallback(padding,20);
+    display:flex;
+    align-items:flex-start;
+    @include rem-fallback(border-radius,5);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    @include rem-fallback(margin-bottom,15);
+    
+    .school-img{
+        i{
+            display:inline-block;
+            @include rem-fallback(margin-right,20);
+   
+        }
+    }
+    h5{
+        font-weight:600;
+        @include rem-fallback(margin-bottom,20);
+        padding:0;
+    }
+    p{
+        color:$light-black-text;
+        @include rem-fallback(line-height,28);
+        @include rem-fallback(margin-bottom,20);
+    }
+    .school-detail-footer{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        .alert-btn{
+            @include rem-fallback(min-width,218);
+        }
+        a{
+            display:inline-flex;
+            justify-content:center;
+            align-items: center;
+            color:$orange;
+            @include rem-fallback(font-size,16);
+            @include rem-fallback(line-height,24);
+            font-weight:600;
+            text-decoration:none;
+            transition: all 0.3s;
+            &:hover{
+                i{
+                    transform: translateX(2px);
+                }
+                span{
+                    &:after{
+                        width:100%;
+                    }
+                }
+            }
+            span{
+                display:inline-block;
+                @include rem-fallback(margin-right,5);
+                position: relative;
+                transition: all 0.3s;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    left:0;
+                    bottom:0;
+                    width:0;
+                    height:1px;
+                    background-color:$orange;
+                    transition: all 0.3s;
+                }
+            }
+            i{
+                display:inline-block;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+
+
+::ng-deep .mat-mdc-form-field-subscript-wrapper{
+    display: none !important;
+}
+
+// ::ng-deep .form-field  .mat-mdc-form-field-infix i{}
+// ::ng-deep .form-field  .mat-mdc-form-field-infix .form-control{@include rem-fallback(min-height,56)}
+// ::ng-deep .mat-mdc-form-field-focus-overlay{display:none;}
+// .form-field .form-control{@include rem-fallback(min-height,30);@include rem-fallback(padding-left,20);}
+// :ng-deep .mat-mdc-text-field-wrapper{background-color:$white;}
+// :ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple{border-bottom: 0 !important; display:none !important;}

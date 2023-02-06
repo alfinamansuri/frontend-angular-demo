@@ -59,10 +59,40 @@ body { margin: 0; font-family: 'Poppins', sans-serif; color:$light-black;@includ
   .secondary-btn i{display:inline-block;@include rem-fallback(margin-right,5);@include rem-fallback(width,15);}
 
   .secondary-btn i img{width:100%} 
-.red-btn{background-color: $red !important;color:$white !important;}
-// .red-btn:hover{border-color:$red !important;color:$red !important;background-color:$gray-1 !important;}
-.pink-btn{background-color: $light-pink !important;color:$orange !important;}
-// .pink-btn:hover{border-color:$orange !important;color:$red !important;background-color: $gray-1 !important;}
+  /* red btn */
+.red-btn{background-color: $red !important;color:$white !important;
+  .normal-img{
+    display:block;
+  }
+  .hover-img{
+    display:none;
+  }
+  }
+.red-btn:hover{border-color:$red !important;color:$red !important;background-color:$white!important;
+  i{
+    .normal-img{
+      display:none;
+    }
+    .hover-img{
+      display:block;
+    }
+  }
+}
+/* end*/
+.pink-btn{
+  background-color: $light-pink !important;color:$orange !important;
+  &:hover{
+    border-color:$orange !important;background-color:$light-pink !important;
+  }
+
+}
+
+.alert-btn{color:$red !important;background-color: $light-red !important;
+  &:hover{
+    border-color:$red !important;
+  }
+}
+
 
 
 
@@ -73,7 +103,7 @@ body { margin: 0; font-family: 'Poppins', sans-serif; color:$light-black;@includ
 .form-group-wrapper .form-group:last-child{margin-bottom:0;}
 .form-group{@include rem-fallback(margin-bottom,30);}
 .form-group label{@include rem-fallback(margin-bottom,8);display:inline-block;@include rem-fallback(font-size,14);font-weight:400;color:$light-black;}
-.form-control{transition: all 0.3s; color:$dark-gary;border:1px solid $input-border;@include rem-fallback(padding,10,15);@include rem-fallback(min-height,56);@include rem-fallback(font-size,16);}
+.form-control{transition: all 0.3s !important; color:$dark-gary;border:1px solid $input-border;@include rem-fallback(padding,10,15);@include rem-fallback(min-height,56);@include rem-fallback(font-size,16);}
 .form-control:focus{border-color:$orange}
 .form-control::placeholder{color:$dark-gary}
 .form-control:focus{outline:0;box-shadow:none;}
@@ -92,11 +122,35 @@ body { margin: 0; font-family: 'Poppins', sans-serif; color:$light-black;@includ
 .custom-checkbox.mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background{border-color:$orange !important;background-color:$orange !important;}
 .custom-checkbox.mat-mdc-checkbox .mdc-checkbox{padding-right:0 !important;padding-left:0 !important;padding-top:0 !important}
 .mat-ripple-element,.mdc-checkbox__ripple{display: none !important;}
-// .mat-mdc-checkbox.mat-accent .mdc-checkbox--selected ~ .mat-mdc-checkbox-ripple .mat-ripple-element{display:none !important;}
-// .mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control:not([disabled]):focus~.mdc-checkbox__ripple{opacity: 0 !important;}
-// ::ng-deep .mat-slide-toggle-ripple {
-//   display: none;
-// }
 
 .side-bar-toggle {position:absolute !important;top:10px;opacity:0;z-index:7;}
-.inner-pages{@include rem-fallback(padding,15);background-color:$gray-1;}
+.inner-pages{background-color:$gray-1;@include rem-fallback(padding-left,280);@include rem-fallback(padding-top,64);}
+
+.inner-block{@include rem-fallback(padding,20);}
+
+::ng-deep .mat-mdc-button-persistent-ripple{display:none !important;}
+
+.side-bar-close {
+  transition:all 0.3s;
+  .side-bar-section{
+      left:-280px !important;
+      transition:all 0.3s;
+  }
+  .header{
+      left:0 !important;
+      transition:all 0.3s;
+  }
+  .inner-pages{
+      padding-left:0 !important;
+      transition:all 0.3s;
+  }
+}
+
+
+.side-bar-close{
+  .header-left{
+  .sidebar-toggle{
+      transform:rotateZ(180deg);
+  }
+}
+}

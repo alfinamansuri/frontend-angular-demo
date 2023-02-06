@@ -1,21 +1,64 @@
+<div class="inner-pages-wrapper">
 
-<!-- <app-side-bar></app-side-bar> -->
-<!-- <app-header></app-header> -->
-<mat-drawer-container class="side-bar-container" autosize>
-    <mat-drawer #drawer class="side-bar-sidenav" opened="true" mode="side">
-        <app-side-bar></app-side-bar>
-    </mat-drawer>
-    <mat-drawer-content>
-        <app-header></app-header>
-        <div class="example-sidenav-content">
-            <button type="button" class="side-bar-toggle" mat-button (click)="drawer.toggle()">
-              Toggle sidenav
-            </button>
+<app-side-bar></app-side-bar>
+<app-header></app-header>
+
+<div class="inner-pages">
+  <div class="inner-block">
+  <div class="my-shool-header">
+      <div class="my-school-header-inner">
+          <div class="school-left-header">
+              <h3>My Schools</h3>
+              <mat-form-field class="example-full-width form-field">
+                <input matInput placeholder="Search Schools" type="search" class="form-control">
+                <i><img src="./assets/images/search.svg"></i>
+              </mat-form-field>
           </div>
-        <app-my-school-page>
-
-        </app-my-school-page>
-    </mat-drawer-content>
-</mat-drawer-container>
-
-
+          <div class="school-header-button">
+              <button mat-button class="secondary-btn red-btn">
+                  <i><img src="./assets/images/alert.svg" class="normal-img" alt="">
+                    <img src="./assets/images/white-alert.svg" class="hover-img" alt="">
+                  
+                  </i><span>Send Emergency Alert</span>
+              </button>
+              <button mat-button class="secondary-btn pink-btn">
+                  <i><img src="./assets/images/school-icon.svg" alt=""></i><span>School not showing up?</span>
+              </button>
+          </div>
+      </div>
+  </div> 
+  <div class="my-school-content">
+        <div class="my-school-block">
+            <div class="school-img">
+                <i><img src="./assets/images/school-img-1.jpg" alt=""></i>
+            </div>
+              <div class="school-detail">
+                  <h5>Nodoworry School</h5>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here.</p>
+                  <div class="school-detail-footer">
+                    <button mat-button class="secondary-btn alert-btn">
+                      <i><img src="./assets/images/alert-icon.svg" alt=""></i><span>Emergency Alert</span>
+                  </button>
+                  <a href="" alt=""><span>Visit Website</span><i><img src="./assets/images/right-arrow.svg"></i></a>
+                  </div>
+              </div>
+            </div>
+            <div class="my-school-block">
+              <div class="school-img">
+                  <i><img src="./assets/images/school-img-2.jpg" alt=""></i>
+              </div>
+                <div class="school-detail">
+                    <h5>Tooradin School</h5>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here.</p>
+                    <div class="school-detail-footer">
+                      <button mat-button class="secondary-btn alert-btn">
+                        <i><img src="./assets/images/alert-icon.svg" alt=""></i><span>Emergency Alert</span>
+                    </button>
+                    <a href="" alt=""><span>Visit Website</span><i><img src="./assets/images/right-arrow.svg"></i></a>
+                    </div>
+                </div>
+              </div>
+  </div>  
+  </div>
+</div>
+</div>

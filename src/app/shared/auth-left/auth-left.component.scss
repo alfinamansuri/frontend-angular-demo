@@ -8,39 +8,114 @@
     @include rem-fallback(padding,70,150,20,40);
     background-size:cover;
     background-repeat:no-repeat;
-    // max-width:42rem;
-    // width:90%;
+    h2{
+        color:$light-black;@include rem-fallback(margin-bottom,10);padding-bottom:0;
+        span{
+            display:inline-block;color:$orange
+        }
+    }
+    p{
+        font-weight:400;@include rem-fallback(margin-bottom,30);
+    }
+    .point-listing{
+     li{
+        display:flex;align-items: flex-start;margin-bottom:1rem;
+        i{
+            display:inline-block;@include rem-fallback(margin,7,10,0,0);
+            img{
+                display:block;width:100%
+            }
+        }
+        p{
+            margin-bottom:0;
+        }
+    }
+
+    }
 
 }
-    
-.auth-left-content-wrapper h2{color:$light-black;@include rem-fallback(margin-bottom,10);padding-bottom:0;}   
-.auth-left-content-wrapper h2 span{display:inline-block;color:$orange}
-.auth-left-content-wrapper p{font-weight:400;@include rem-fallback(margin-bottom,30);}
-
 .white-btn{border:1px solid }
 
-.auth-left-content-wrapper .point-listing li{display:flex;align-items: flex-start;margin-bottom:1rem}
-.auth-left-content-wrapper .point-listing li i{display:inline-block;@include rem-fallback(margin,7,10,0,0);}
-.auth-left-content-wrapper .point-listing li i img{display:block;width:100%}
-.auth-left-content-wrapper .point-listing li p{margin-bottom:0;}
-.border-btn{background-color: rgba(255, 255, 255, 0.3); @include rem-fallback(min-height,56);@include rem-fallback(max-width,177); transition:0.3s all;border: 2px solid rgba(247, 143, 30, 0.2);@include rem-fallback(margin-top,15); @include rem-fallback(padding,9,15);@include rem-fallback(font-size,16); @include rem-fallback(border-radius,2);font-weight:600;background-color:transparent}
-.border-btn i{display:inline-block;@include rem-fallback(width,10);transition:0.3s all;}
-.border-btn i img{width:100%}
-.border-btn:hover{border: 2px solid rgb(247, 143, 30);}
-.border-btn:hover i{transform:translate(3px)}
-.border-btn span:before{display:none;}
+.border-btn{
+    background-color: rgba(255, 255, 255, 0.3); @include rem-fallback(min-height,56);@include rem-fallback(max-width,177); transition:0.3s all;border: 2px solid rgba(247, 143, 30, 0.2);@include rem-fallback(margin-top,15); @include rem-fallback(padding,9,15);@include rem-fallback(font-size,16); @include rem-fallback(border-radius,2);font-weight:600;background-color:transparent
+    i{
+        display:inline-block;@include rem-fallback(width,10);transition:0.3s all;
+        img{
+            width:100%
+        }
+    }
+    &:hover{
+        border: 2px solid rgb(247, 143, 30);
+        i{
+            transform:translate(3px);
+        }
+    }
+    span{
+        &:before{
+            display:none;
+        }
+    }
+}
+
+.social-links{
+    margin-top:4rem;display:flex;align-items:center;
+    li{
+        @include rem-fallback(padding,5);
+        a{
+            display:inline-block;@include rem-fallback(padding,5); @include rem-fallback(width,50);@include rem-fallback(height,50);border-radius:100%;border:1px solid $blue;display:flex;
+align-items:center;justify-content:center;
+            img{
+                @include rem-fallback(width,15);
+            }
+            .hover-img{display:none;}
+            .normal-img{display:block;}
+            &:hover{
+                background-color:$blue;
+                .hover-img{display:block;}
+                .normal-img{display:none;}
+            }
+
+            &.facebook{
+                img{
+                    @include rem-fallback(width,10);
+                }
+            }
+        }
+        
+        
+    }
+
+}
+
+    
+// .auth-left-content-wrapper h2{color:$light-black;@include rem-fallback(margin-bottom,10);padding-bottom:0;}   
+// .auth-left-content-wrapper h2 span{display:inline-block;color:$orange}
+// .auth-left-content-wrapper p{font-weight:400;@include rem-fallback(margin-bottom,30);}
+
+// .white-btn{border:1px solid }
+
+// .auth-left-content-wrapper .point-listing li{display:flex;align-items: flex-start;margin-bottom:1rem}
+// .auth-left-content-wrapper .point-listing li i{display:inline-block;@include rem-fallback(margin,7,10,0,0);}
+// .auth-left-content-wrapper .point-listing li i img{display:block;width:100%}
+// .auth-left-content-wrapper .point-listing li p{margin-bottom:0;}
+// .border-btn{background-color: rgba(255, 255, 255, 0.3); @include rem-fallback(min-height,56);@include rem-fallback(max-width,177); transition:0.3s all;border: 2px solid rgba(247, 143, 30, 0.2);@include rem-fallback(margin-top,15); @include rem-fallback(padding,9,15);@include rem-fallback(font-size,16); @include rem-fallback(border-radius,2);font-weight:600;background-color:transparent}
+// .border-btn i{display:inline-block;@include rem-fallback(width,10);transition:0.3s all;}
+// .border-btn i img{width:100%}
+// .border-btn:hover{border: 2px solid rgb(247, 143, 30);}
+// .border-btn:hover i{transform:translate(3px)}
+// .border-btn span:before{display:none;}
 
 
-.social-links{margin-top:4rem;display:flex;align-items:center;}
-.social-links li{@include rem-fallback(padding,5);}
-.social-links li a{display:inline-block;@include rem-fallback(padding,5); @include rem-fallback(width,50);@include rem-fallback(height,50);border-radius:100%;border:1px solid $blue;display:flex;
-align-items:center;justify-content:center;}
-.social-links li a img{@include rem-fallback(width,15);}
-.social-links li .facebook img{@include rem-fallback(width,10);}
-.social-links li a:hover{background-color:$blue;}
-.social-links li a:hover .hover-img{display:block;}
-.social-links li a .hover-img{display:none;}
+// .social-links{margin-top:4rem;display:flex;align-items:center;}
+// .social-links li{@include rem-fallback(padding,5);}
+// .social-links li a{display:inline-block;@include rem-fallback(padding,5); @include rem-fallback(width,50);@include rem-fallback(height,50);border-radius:100%;border:1px solid $blue;display:flex;
+// align-items:center;justify-content:center;}
+// .social-links li a img{@include rem-fallback(width,15);}
+// .social-links li .facebook img{@include rem-fallback(width,10);}
+// .social-links li a:hover{background-color:$blue;}
+// .social-links li a:hover .hover-img{display:block;}
+// .social-links li a .hover-img{display:none;}
 
-.social-links li a .normal-img{display:block;}
-.social-links li a:hover .normal-img{display:none;}
-// body{padding:1.875rem;font-family:$primary-font;}
+// .social-links li a .normal-img{display:block;}
+// .social-links li a:hover .normal-img{display:none;}
+

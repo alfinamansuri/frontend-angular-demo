@@ -1,16 +1,63 @@
 @import "general";
-.auth-left-wrapper{max-width:49%;
-    flex:0 0 49%;}
+
+
+
+@import "general";
+
+.auth-left-wrapper{max-width:49%;flex:0 0 49%;}
 .authentication-page{display:flex;background-color:$white;@include rem-fallback(padding,20);}
-.auth-right-block{position: relative;max-width:49%;flex:0 0 49%;display:flex;flex-direction:column;justify-content:space-between; align-items:center;@include rem-fallback(padding,50,50,0);}
-.auth-right-block .auth-logo{display:block;width:70%;margin-left:auto;margin-right:auto; @include rem-fallback(margin-bottom,50)}
-.auth-right-block .auth-logo img{width:100%}
-.auth-footer{@include rem-fallback(font-size,14);color:$light-black-text;margin-bottom: 0;}
-.auth-footer .auth-footer-link{@include rem-fallback(font-size,14);text-decoration:none;border-bottom:1px solid  $light-black-text;color:$light-black-text}
-.auth-footer .auth-footer-link:hover{border-color:$orange}
-.password-link:after{display: none;}
-.password-link:hover{color:#757575}
-.auth-right-block-inner h2{@include rem-fallback(font-size,32);}
+.auth-right-block{position: relative;max-width:49%;flex:0 0 49%;display:flex;flex-direction:column;justify-content:space-between; align-items:center;@include rem-fallback(padding,50,50,0);
+    .auth-logo{display:block;width:70%;margin-left:auto;margin-right:auto; @include rem-fallback(margin-bottom,50);
+        img{width:100%}
+    }
+    .auth-right-block-inner{max-width:400px;width:100%;}
+}
+.auth-footer{@include rem-fallback(font-size,14);color:$light-black-text;margin-bottom: 0;
+    .auth-footer-link{@include rem-fallback(font-size,14);text-decoration:none;border-bottom:1px solid  $light-black-text;color:$light-black-text;
+        &:hover{border-color:$orange}    
+    } 
+
+}
+.password-link{
+&:after{
+    display: none;
+}
+&:hover{
+    color:#757575;
+}
+}
+.auth-right-block-inner {
+h2{@include rem-fallback(font-size,32);}
+}
 .reset-password{@include rem-fallback(margin-top,30);}
-.forgot-password-page .form-block p{font-weight:400; @include rem-fallback(font-size,18);@include rem-fallback(line-height,28);color:$gray-text-1;}
-.auth-right-block .auth-right-block-inner{max-width:400px;width:100%;}
+.forgot-password-page {
+.form-block {
+p{font-weight:400; @include rem-fallback(font-size,18);@include rem-fallback(line-height,28);color:$gray-text-1;}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+// .auth-left-wrapper{max-width:49%;
+//     flex:0 0 49%;}
+// .authentication-page{display:flex;background-color:$white;@include rem-fallback(padding,20);}
+// .auth-right-block{position: relative;max-width:49%;flex:0 0 49%;display:flex;flex-direction:column;justify-content:space-between; align-items:center;@include rem-fallback(padding,50,50,0);}
+// .auth-right-block .auth-logo{display:block;width:70%;margin-left:auto;margin-right:auto; @include rem-fallback(margin-bottom,50)}
+// .auth-right-block .auth-logo img{width:100%}
+// .auth-footer{@include rem-fallback(font-size,14);color:$light-black-text;margin-bottom: 0;}
+// .auth-footer .auth-footer-link{@include rem-fallback(font-size,14);text-decoration:none;border-bottom:1px solid  $light-black-text;color:$light-black-text}
+// .auth-footer .auth-footer-link:hover{border-color:$orange}
+// .password-link:after{display: none;}
+// .password-link:hover{color:#757575}
+// .auth-right-block-inner h2{@include rem-fallback(font-size,32);}
+// .reset-password{@include rem-fallback(margin-top,30);}
+// .forgot-password-page .form-block p{font-weight:400; @include rem-fallback(font-size,18);@include rem-fallback(line-height,28);color:$gray-text-1;}
+// .auth-right-block .auth-right-block-inner{max-width:400px;width:100%;}
