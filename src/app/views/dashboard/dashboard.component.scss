@@ -12,20 +12,20 @@
 
 
 
-.dashboard-alert-wrapper{display:flex;@include rem-fallback(margin,0,-10);}
+.dashboard-alert-wrapper{display:flex;@include rem-fallback(margin,0,-10 , 30);}
 
 .dashboard-alert-outer,.school-holiday-block-outer{
     @include rem-fallback(padding,0,10);
     width:50%;
+   
 }
-
-
-
 .dashboard-alert-block {
     background-color:$light-pink-1;
     @include rem-fallback(padding,20);
     text-align: center;
     @include rem-fallback(border-radius,8);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    height:100%;
 
     > i{
         display:inline-block;
@@ -43,11 +43,13 @@
 }
 .school-holiday-block{
     display:flex;
-    @include rem-fallback(padding,15);
+    @include rem-fallback(padding,30);
+    height:100%;
     background-color: $white;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     @include rem-fallback(border-radius,8);
     i{
-        @include rem-fallback(margin-right,10);
+        @include rem-fallback(margin-right,15);
     }
     .school-holiday-detail{
         h6{
@@ -60,7 +62,45 @@
             @include rem-fallback(line-height,28);
             @include rem-fallback(margin-bottom,10);
             padding-bottom:0;
+            color:$light-gray-1;
 
+        }
+        .holiday-info{
+            display:flex;
+            justify-content:space-between;
+            .holiday-date{
+                display:flex;
+                align-items: center;
+                span{
+                    font-weight:400;
+                    @include rem-fallback(font-size,14);
+                    @include rem-fallback(line-height,18);
+                    
+                }
+            }
+            a{
+                @include rem-fallback(font-size,16);
+                    @include rem-fallback(line-height,18);
+                    font-weight:500;
+                    color:$blue;
+                    text-decoration:none;
+                    position:relative;
+                    &:after{
+                        content: "";
+                        position:absolute;
+                        left:0;
+                        bottom:0;
+                        width:0;
+                        height: 1px;
+                        background-color: $blue;
+                        transition:0.3s all;
+                    }
+                    &:hover{
+                        &:after{
+                            width:100%;
+                        }
+                    }
+            }
         }
     }
 }
@@ -68,10 +108,53 @@
 
 
 .message-status-block{
-    background-color:$white;
-    @include rem-fallback(padding,20);
     i{
         @include rem-fallback(margin-right,15);
+    }
+    .message-listing{
+        display: flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        @include rem-fallback(margin,0,-10,30);
+        i{
+            display:inline-block;
+            
+        }
+        li{
+            width:33.33%;
+            @include rem-fallback(padding,10);
+            .msg-listing-inner{
+                display:flex;
+                background-color: $white;
+                @include rem-fallback(padding,20);
+                @include rem-fallback(border-radius,8);
+                box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+                height: 100%;
+        }
+        }
+        .message-detail{
+        h6{
+            @include rem-fallback(font-size,16);
+            @include rem-fallback(line-height,18);
+            font-weight:400;
+            @include rem-fallback(margin-bottom,15);
+            padding-bottom:0;
+        }
+        span{
+            @include rem-fallback(font-size,28);
+            @include rem-fallback(font-size,32);
+            font-weight:700;
+        }
+        .yellow{
+            color:$orange;
+        }
+        .red{
+            color:$red;
+        }
+        .blue{
+            color:$blue;
+        }
+    }
     }
 }
 

@@ -12,15 +12,28 @@
     ul{
         @include rem-fallback(margin-bottom,20);
         li {
-            a{display:flex;align-items: center; @include rem-fallback(padding,15);display:block;text-decoration:none;
+            a{display:flex;align-items: center; @include rem-fallback(padding,15);display:flex;align-items: center; text-decoration:none;
                 span{display:inline-block;  color:$light-black;@include rem-fallback(font-size,16);@include rem-fallback(line-height,24);font-weight:400;}
+                &.active {
+                    background-color:$blue;@include rem-fallback(border-radius,6);
+                    span{color:$white}
+                     .active{
+                        display:block;
+                     }
+                     .normal{
+                        display:none;
+                     }
+               
+                }
+                .normal{
+                    display:block;
+                }
+                .active{
+                    display:none;
+                }
+            
             }
-            &.active {
-                background-color:$blue;@include rem-fallback(border-radius,6);
-            a{
-                 span{color:$white}
-            }
-            }
+           
             i{ @include rem-fallback(width,20);@include rem-fallback(height,20); display:inline-block;@include rem-fallback(margin-right,10);
                 img{width:100%}
             }
