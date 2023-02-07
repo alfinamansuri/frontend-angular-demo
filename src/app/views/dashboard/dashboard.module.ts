@@ -1,24 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { MySchoolRoutingModule } from './my-school-routing.module';
-import { MySchoolComponent } from './my-school.component';
+import { DashboardRoutingModule } from './dashboard-routing.module';
+import { DashboardComponent } from './dashboard.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
 @NgModule({
   declarations: [
-    MySchoolComponent,
-   
+    DashboardComponent
   ],
   imports: [
     CommonModule,
-    MySchoolRoutingModule,
-    SharedModule
-    
+    SharedModule,
+    DashboardRoutingModule,
   ],
   exports: [
   ],
 })
-export class MySchoolModule { }
+export class DashboardModule { }

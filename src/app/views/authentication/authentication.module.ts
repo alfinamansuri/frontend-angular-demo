@@ -21,9 +21,6 @@ import { CreatePassowrdComponent } from './create-passowrd/create-passowrd.compo
     CommonModule,
     AuthenticationRoutingModule,
     SharedModule
-  ],
-  exports: [
-    SharedModule
-  ],
+  ]
 })
 export class AuthenticationModule { }
