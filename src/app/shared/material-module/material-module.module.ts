@@ -7,7 +7,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
-
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -22,6 +22,7 @@ import {MatInputModule} from '@angular/material/input';
     MatToolbarModule,
     MatIconModule,
     MatInputModule,
+    MatTableModule,
 
  
   ],
@@ -32,7 +33,8 @@ import {MatInputModule} from '@angular/material/input';
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule
   
   ]
 })
