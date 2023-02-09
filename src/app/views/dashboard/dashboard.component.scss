@@ -319,3 +319,116 @@
         box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     }
 }
+
+.msg-block-wrapper{
+    display:flex;
+    justify-content:space-between;
+    @include rem-fallback(margin-right,0,-10);
+    .msg-block-inner{
+        background-color: $white;
+        @include rem-fallback(padding,20);
+    }
+
+    .msg-block{
+        @include rem-fallback(padding,0,10);
+        width:50%;
+        h5{
+            color:$light-black;
+            font-weight: 500;
+            @include rem-fallback(margin-bottom,30);
+            padding:0;
+        }
+    }
+    .last-msg-block{
+        .today-msg{
+            color:$blue;
+            @include rem-fallback(font-size,16);
+            @include rem-fallback(line-height,20);
+            font-weight:500;
+            @include rem-fallback(margin-bottom,15);
+            display:inline-block;
+        }
+        p{
+            color:$light-black-text;
+            @include rem-fallback(font-size,14);
+            @include rem-fallback(line-height,24);
+            font-weight:400;
+            @include rem-fallback(margin-bottom,30);
+        }
+   
+    .msg-platform{
+        span{
+            display:inline-block;
+            font-weight:400;
+            @include rem-fallback(margin-bottom,12);
+            @include rem-fallback(line-height,24);
+            color: $black;
+        }
+    }
+    ul{
+        display: flex;
+        flex-wrap:wrap;
+        @include rem-fallback(margin,0,-6,30);
+        li{
+            @include rem-fallback(padding,0,6);
+            a{
+                display: inline-block;
+               
+                @include rem-fallback(padding,5,20);
+                @include rem-fallback(border-radius,34);
+                @include rem-fallback(font-size,14);
+                @include rem-fallback(line-height,24);
+                font-weight:500;
+                text-decoration:none;
+            }
+            .msg{
+                color:$green;
+                background-color: $light-green;
+            }
+            .email{
+                color:$purpal;
+                background-color:$light-purpal;
+            }
+            .facebook{
+                color:$blue;
+                background-color: $light-blue-1;
+            }
+        }
+
+        }
+        .msg-time-wrapper{
+            display:flex;
+            justify-content: space-between;
+            p{
+                @include rem-fallback(font-size,14);
+                @include rem-fallback(line-height,18);
+                margin-bottom:0;
+                i{
+                    display:inline-block;
+                    @include rem-fallback(margin-right,8);
+                    @include rem-fallback(width,20);
+                    img{
+                        width:100%;
+                    }
+                }
+                span{
+                    display:inline-block;
+                    @include rem-fallback(margin-left,10);
+                }
+            }
+            .reply{
+                @include rem-fallback(padding,5,20);
+                @include rem-fallback(border-radius,34);
+                @include rem-fallback(font-size,14);
+                @include rem-fallback(line-height,24);
+                font-weight:500;
+                text-decoration:none;
+                display: inline-block;
+                color:$orange;
+                background-color:$light-orange;
+            }
+
+        }
+    }
+
+}
