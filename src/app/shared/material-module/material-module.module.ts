@@ -8,7 +8,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import {MatInputModule} from '@angular/material/input';
 import {MatTableModule} from '@angular/material/table';
-
+import {MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
@@ -23,6 +23,7 @@ import {MatTableModule} from '@angular/material/table';
     MatIconModule,
     MatInputModule,
     MatTableModule,
+    MatSelectModule,
 
  
   ],
@@ -34,7 +35,8 @@ import {MatTableModule} from '@angular/material/table';
     MatToolbarModule,
     MatIconModule,
     MatInputModule,
-    MatTableModule
+    MatTableModule,
+    MatSelectModule
   
   ]
 })

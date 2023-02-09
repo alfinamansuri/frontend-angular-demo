@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 
@@ -15,6 +15,19 @@ import { Component } from '@angular/core';
 export class DashboardComponent {
   displayedColumns = ['name', 'number', 'email' , 'roles', 'status','login','actions',];
   dataSource = ELEMENT_DATA;
+  foods: Food[] = [
+    {value: 'This Week', viewValue: 'This Week'},
+    {value: 'Last Week', viewValue: 'Last Week'},
+    {value: 'Last Month', viewValue: 'Last Month'}
+  ];
+}
+
+
+
+
+export interface Food {
+  value: string;
+  viewValue: string;
 }
 
 export interface Element {

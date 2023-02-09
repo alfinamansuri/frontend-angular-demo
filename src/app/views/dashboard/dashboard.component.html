@@ -142,6 +142,52 @@
             <div class="msg-block-inner">
                 <div class="msg-dropdown-wrap">
                     <h5>Message Sent</h5>
+                    <div class="dropdown-block">
+                      <mat-form-field appearance="fill" class="custom-deropdown">
+                       
+                        <select matNativeControl required>
+                          <option value="This Week">This Week</option>
+                          <option value="Last Week">Last Week</option>
+                          <option value="Last Month">Last Month</option>
+                        
+                        </select>
+                      </mat-form-field>
+
+                      <!-- <mat-form-field appearance="fill" class="custom-deropdown">
+                        
+                        <mat-select>
+                          <mat-option *ngFor="let food of foods" [value]="food.value">
+                            {{food.viewValue}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field> -->
+
+                      <!-- <mat-form-field appearance="fill" class="custom-deropdown">
+                       
+                        <mat-select>
+                      
+                            <option value="This Week" selected>This Week</option>
+                            <option value="Last Week">Last Week</option>
+                            <option value="Last Month">Last Month</option>
+                        
+                        </mat-select>
+                      </mat-form-field> -->
+
+
+                      <!-- <mat-form-field appearance="fill">
+                        <mat-label>Cars</mat-label>
+                        <select matNativeControl required>
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="mercedes">Mercedes</option>
+                          <option value="audi">Audi</option>
+                        </select>
+                      </mat-form-field> -->
+
+                    </div>
+                </div>
+                <div class="chart-block">
+                  <canvas id="myChart"></canvas>
                 </div>
             </div>
 
@@ -169,3 +215,6 @@
       </div>
         </div>
         </div>
+
+
+        
