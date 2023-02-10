@@ -154,3 +154,138 @@ body { margin: 0; font-family: 'Poppins', sans-serif; color:$light-black;@includ
   }
 }
 }
+
+
+/* dropdown css start*/
+
+.dropdown-block{
+   .mat-mdc-form-field{
+  @include rem-fallback(height,40);
+  background-color: $white;
+border:1px solid $dropdown-border;
+@include rem-fallback(border-radius,6);
+   }
+}
+
+.dropdown-block{
+ .mdc-text-field--outlined{
+  padding:0;
+}
+}
+ .dropdown-block {
+ .mat-mdc-text-field-wrapper{
+  height:100% !important;
+  padding:0 !important;
+  background-color: $white !important;
+  border-radius:6px !important;
+}
+ }
+.dropdown-block {
+.mat-mdc-form-field-subscript-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+}
+ .dropdown-block {
+ .mat-mdc-form-field-focus-overlay{
+  display:none;
+}
+ }
+ .dropdown-block{
+  .mdc-line-ripple{
+  display:none !important;
+}
+ }
+ .dropdown-block {
+ .mat-mdc-form-field {
+ .mat-mdc-form-field-infix {
+  width: 100%;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  @include rem-fallback(min-height,28);
+}
+}
+ }
+ .dropdown-block{
+  .mat-mdc-form-field{
+  mat-select, mat-label{
+  color:$black;
+   @include rem-fallback(font-size,14);
+   @include rem-fallback(line-height,21);
+   font-weight:400;
+  @include rem-fallback(padding,7,12,5,12);
+  @include rem-fallback(min-width,128);
+}
+  }
+}
+
+ .dropdown-block {
+ .mat-mdc-form-field {
+.mat-mdc-select-arrow {
+  background-image: url('/assets/images/down-arrow.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include rem-fallback(height,10);
+
+  @include rem-fallback(width,10);
+  @include rem-fallback(margin-left,10);
+  margin-top:2px;
+  svg{
+      display:none;
+  }
+}
+ }
+}
+.mat-mdc-form-field {
+.mat-mdc-form-field-subscript-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+}
+.mat-mdc-option {
+  padding:5px 10px !important;
+  min-height:40px !important;
+  span{
+      color:$black;
+  font-size:14px !important;
+  line-height:21px !important;
+   font-weight:400 !important;
+  @include rem-fallback(min-width,128);
+  }
+}
+ .mdc-menu-surface{
+  margin-top:10px !important;
+  border-radius:6px !important;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+ .mdc-floating-label{
+  position: absolute;
+  // top:50% !important;
+  // transform: translateY(-50%) !important;
+  font-size:14px !important;
+  line-height:21px !important;
+   font-weight:400 !important;
+}
+.mat-mdc-select-arrow-wrapper{
+  transform:none !important;
+}
+ .mat-mdc-option-active {
+  span{
+    color:$blue !important;
+  }
+}
+
+
+
+
+
+
+
+
+/*end*/

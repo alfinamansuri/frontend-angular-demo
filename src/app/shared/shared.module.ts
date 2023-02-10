@@ -6,6 +6,8 @@ import { MaterialModuleModule } from './material-module/material-module.module';
 import { CreatePassModalComponent } from './modal/create-pass-modal/create-pass-modal.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { HeaderComponent } from './header/header.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component';
+
 
 
 
@@ -15,13 +17,15 @@ import { HeaderComponent } from './header/header.component';
     AuthLeftComponent,
     CreatePassModalComponent,
     SideBarComponent,
-    HeaderComponent
+    HeaderComponent,
+    BarChartComponent
 
   ],
   imports: [
     CommonModule,
     RouterModule,
     MaterialModuleModule,
+ 
     
     
   ],
@@ -31,6 +35,8 @@ import { HeaderComponent } from './header/header.component';
     HeaderComponent,
     AuthLeftComponent,
     MaterialModuleModule,
+    BarChartComponent
+
     
   ]
 })

@@ -6,6 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MAT_RIPPLE_GLOBAL_OPTIONS } from '@angular/material/core';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -14,6 +16,7 @@ import { MAT_RIPPLE_GLOBAL_OPTIONS } from '@angular/material/core';
 @NgModule({
   declarations: [
     AppComponent,
+   
 
     
   ],
@@ -23,6 +26,7 @@ import { MAT_RIPPLE_GLOBAL_OPTIONS } from '@angular/material/core';
     BrowserAnimationsModule,
     SharedModule,
     NgbModule,
+    FormsModule
   
   ],
 
