@@ -37,9 +37,11 @@ $school_angular-demo-theme: mat.define-light-theme((
 
 
 
+
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 @import "general";
+
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Poppins', sans-serif; color:$light-black;@include rem-fallback(font-size,18) }
 
@@ -91,10 +93,8 @@ body { margin: 0; font-family: 'Poppins', sans-serif; color:$light-black;@includ
   &:hover{
     border-color:$red !important;
   }
+
 }
-
-
-
 
 
 
@@ -281,11 +281,3 @@ border:1px solid $dropdown-border;
   }
 }
 
-
-
-
-
-
-
-
-/*end*/

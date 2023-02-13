@@ -7,6 +7,7 @@ import { CreatePassModalComponent } from './modal/create-pass-modal/create-pass-
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { HeaderComponent } from './header/header.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
+import { SentTabComponent } from './sent-tab/sent-tab.component';
 
 
 
@@ -18,7 +19,8 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
     CreatePassModalComponent,
     SideBarComponent,
     HeaderComponent,
-    BarChartComponent
+    BarChartComponent,
+    SentTabComponent
 
   ],
   imports: [
@@ -35,7 +37,8 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
     HeaderComponent,
     AuthLeftComponent,
     MaterialModuleModule,
-    BarChartComponent
+    BarChartComponent,
+    SentTabComponent
 
     
   ]
