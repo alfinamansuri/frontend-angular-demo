@@ -10,6 +10,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatTableModule} from '@angular/material/table';
 import {MatSelectModule} from '@angular/material/select';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatInputModule,
     MatTableModule,
     MatSelectModule,
-    MatTabsModule
+    MatTabsModule,
+    MatPaginatorModule
 
  
   ],
@@ -39,7 +41,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatInputModule,
     MatTableModule,
     MatSelectModule,
-    MatTabsModule
+    MatTabsModule,
+    MatPaginatorModule
   
   ]
 })

@@ -9,9 +9,9 @@
         width:auto !important;
         padding:0 !important;
         i{
-        width:20px;
+        width:22px;
         @include rem-fallback(padding,0,4);
-        height:20px;
+        height:22px;
         img{
             width:100%;
         }
@@ -35,8 +35,30 @@
 }
 
 
+.mat-column-date,.mat-column-ndate{
+    flex: 0 0 13% !important;
+    width: 13% !important;
+}
 
+.mat-column-name{
+    flex: 0 0 23% !important;
+    width: 23% !important;
+}
 
-
+.mat-column-detail {
+    word-wrap: break-word !important;
+    white-space: unset !important;
+    flex: 0 0 28% !important;
+    width: 28% !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  
+    word-break: break-word;
+  
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
 
 
