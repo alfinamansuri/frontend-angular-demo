@@ -103,7 +103,7 @@ body { margin: 0; font-family: 'Poppins', sans-serif; color:$light-black;@includ
 .form-group-wrapper .form-group:last-child{margin-bottom:0;}
 .form-group{@include rem-fallback(margin-bottom,30);}
 .form-group label{@include rem-fallback(margin-bottom,8);display:inline-block;@include rem-fallback(font-size,14);font-weight:400;color:$light-black;}
-.form-control{transition: all 0.3s !important; color:$dark-gary;border:1px solid $input-border;@include rem-fallback(padding,10,15);@include rem-fallback(min-height,56);@include rem-fallback(font-size,16);}
+.form-control{transition: all 0.3s !important; color:$dark-gary;border:1px solid $input-border;@include rem-fallback(padding,10,15);@include rem-fallback(min-height,56);font-size:16px !important; }
 .form-control:focus{border-color:$orange}
 .form-control::placeholder{color:$dark-gary}
 .form-control:focus{outline:0;box-shadow:none;}
@@ -281,3 +281,23 @@ border:1px solid $dropdown-border;
   }
 }
 
+
+
+/* message page css start */
+.tab-content-header{display: flex;justify-content: space-between;}
+.dropdown-wrapper{display:flex;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*end*/
