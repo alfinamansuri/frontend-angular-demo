@@ -24,10 +24,17 @@
 
 }
 .hide{
+    @include rem-fallback(padding,0,5);
     span{
         background-color: $light-pink;
+        border:1px solid transparent;
         i{
             @include rem-fallback(height,11);
+        }
+    }
+    &:hover{
+        span{
+            border-color:$orange;
         }
     }
 }
@@ -41,15 +48,15 @@
 }
 
 .mat-column-name{
-    flex: 0 0 23% !important;
-    width: 23% !important;
+    flex: 0 0 19% !important;
+    width: 19% !important;
 }
 
 .mat-column-detail {
     word-wrap: break-word !important;
     white-space: unset !important;
-    flex: 0 0 28% !important;
-    width: 28% !important;
+    flex: 0 0 25% !important;
+    width: 25% !important;
     overflow-wrap: break-word;
     word-wrap: break-word;
   
@@ -62,3 +69,12 @@
   }
 
 
+
+  .tab-content-table{
+    .mat-mdc-header-cell{
+        i{
+            @include rem-fallback(margin-left,10);
+            display:inline-block;
+        }
+    }
+  }

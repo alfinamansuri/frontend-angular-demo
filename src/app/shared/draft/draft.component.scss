@@ -1,0 +1,75 @@
+@import 'general';
+
+
+.tab-content-table{
+    .mat-mdc-header-cell{
+        i{
+            @include rem-fallback(margin-left,10);
+            display:inline-block;
+        }
+    }
+  }
+
+  .draft-table {
+    .hide{
+        @include rem-fallback(padding,0,5);
+        span{
+            background-color: $light-pink;
+            border:1px solid transparent;
+            i{
+                @include rem-fallback(height,11);
+            }
+        }
+        &:hover{
+            span{
+                border-color:$orange;
+            }
+        }
+    }
+  }
+  .user-table-wrapper{
+  .msg-table{
+    span{
+        height:auto !important;
+        width:auto !important;
+        padding:0 !important;
+        i{
+        width:22px;
+        @include rem-fallback(padding,0,4);
+        height:22px;
+        img{
+            width:100%;
+        }
+    }
+    }
+    .facebook{
+        display: inline-block !important;
+        width:15px !important;
+    }
+
+}
+  }
+
+
+
+ .mat-column-actions{
+    width:10%;
+    flex:0 0 10%;
+ } 
+.mat-column-date,.mat-column-ndate{
+    width:12.5%;
+    flex:0 0 12.5%;
+}
+.mat-column-no{
+    width:13%;
+    flex:0 0 13%;
+}
+
+
+
+
+
+
+
+
+

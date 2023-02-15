@@ -93,7 +93,14 @@
 .dropdown-block{
     @include rem-fallback(padding,0,5);
 }
-
+.tab-content-table{
+    .mat-mdc-header-cell{
+        i{
+            @include rem-fallback(margin-left,10);
+            display:inline-block;
+        }
+    }
+  }
 
 
 

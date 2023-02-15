@@ -42,10 +42,6 @@ $school_angular-demo-theme: mat.define-light-theme((
 @import 'bootstrap/scss/bootstrap';
 @import "general";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Poppins', sans-serif; color:$light-black;@include rem-fallback(font-size,18) }
-
-
 .primary-btn {border-color:transparent !important;outline:0 !important; width:100%;@include rem-fallback(min-height,56);@include rem-fallback(font-size,18); background-color:$orange !important;color:$white !important;@include rem-fallback(border-radius,6); @include rem-fallback(margin-bottom,20)}
 .primary-btn:hover{border:1px solid $orange !important;background-color:transparent !important;color:$orange !important}
 .primary-btn span:before{display:none;}

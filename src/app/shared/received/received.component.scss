@@ -1,0 +1,22 @@
+@import 'general';
+
+
+
+.tab-content-table{
+    .mat-mdc-header-cell{
+        i{
+            @include rem-fallback(margin-left,10);
+            display:inline-block;
+        }
+    }
+  }
+
+  .mat-column-form{
+    width:18%;
+    flex:0 0 18%;
+  }
+
+  .mat-column-detail{
+    width:63%;
+    flex:0 0 63%;
+  }

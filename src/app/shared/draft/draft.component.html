@@ -37,7 +37,7 @@
     <div class="tab-content-detail">
         <div class="tab-content-table">
             <div class="user-table-wrapper">
-            <div class="user-table">
+            <div class="user-table draft-table">
                 <div class="user-table-container mat-elevation-z8">
                   <mat-table #table  [dataSource]="dataSource">
     
@@ -91,8 +91,15 @@
                         <mat-cell *matCellDef="let element">
                    
                         <div class="actions">
+                            
+                            <a href="#" title=""delete  class="delete">
+                                <span><i><img src="./assets/images/delete.svg"></i></span>
+                            </a>
                             <a href="#" title="edit" class="hide">
                                 <span><i><img src="./assets/images/hide.svg"></i></span>
+                            </a>
+                            <a href="#" title="edit" class="edit">
+                                <span><i><img src="./assets/images/blue-msg.svg"></i></span>
                             </a>
                         </div> 
       

@@ -1,0 +1,71 @@
+
+
+<div class="tab-content">
+    <div class="tab-content-header sent-tab">
+            <div class="left-tab-header">
+                <div class="search-input">
+                <mat-form-field class="example-full-width form-field">
+                    <input matInput placeholder="Search" type="search" class="form-control">
+                    <i><img src="./assets/images/search.svg"></i>
+                  </mat-form-field>
+                </div>
+            </div>
+            <div class="right-tab-header">
+                <div class="dropdown-wrapper">
+                      <div class="dropdown-block">
+                        <mat-form-field appearance="fill" class="custom-deropdown">
+                          <mat-select [(value)]="selected">
+                            <mat-option value="1">Today Only</mat-option>
+                            <mat-option value="2">Email Only</mat-option>
+                            <mat-option value="3">Today Only</mat-option>
+                          </mat-select>
+                        </mat-form-field>
+  
+                      </div>
+                </div>
+            </div>
+    </div>
+    <div class="tab-content-detail">
+        <div class="tab-content-table">
+            <div class="user-table-wrapper">
+            <div class="user-table">
+                <div class="user-table-container mat-elevation-z8">
+                  <mat-table #table  [dataSource]="dataSource">
+    
+                    <ng-container matColumnDef="form">
+                      <mat-header-cell *matHeaderCellDef>Form </mat-header-cell>
+                      <!-- <mat-cell *matCellDef="let element" [innerHTML]="element.name">
+                      </mat-cell> -->
+
+                      <mat-cell *matCellDef="let element"> {{element.form}} </mat-cell>
+                    </ng-container>
+                
+                
+                    <ng-container matColumnDef="detail">
+                      <mat-header-cell *matHeaderCellDef> Content </mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.detail}} </mat-cell>
+                    </ng-container>
+                
+                    <ng-container matColumnDef="date">
+                      <mat-header-cell *matHeaderCellDef>Received <i><img src="./assets/images/up-down-arrow.svg"></i>  </mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.date}} </mat-cell>
+                    </ng-container>
+                   
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                  </mat-table>
+                </div>
+            </div>
+            
+            
+              <app-pagination></app-pagination>
+                
+              </div>
+
+
+        </div>
+
+
+    </div>
+
+</div>

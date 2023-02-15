@@ -8,6 +8,10 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { HeaderComponent } from './header/header.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { SentTabComponent } from './sent-tab/sent-tab.component';
+import { PaginationComponent } from './pagination/pagination.component';
+import { ReceivedComponent } from './received/received.component';
+import { DraftComponent } from './draft/draft.component';
+import { TemplateComponent } from './template/template.component';
 
 
 
@@ -20,7 +24,11 @@ import { SentTabComponent } from './sent-tab/sent-tab.component';
     SideBarComponent,
     HeaderComponent,
     BarChartComponent,
-    SentTabComponent
+    SentTabComponent,
+    PaginationComponent,
+    ReceivedComponent,
+    DraftComponent,
+    TemplateComponent
 
   ],
   imports: [
@@ -38,7 +46,10 @@ import { SentTabComponent } from './sent-tab/sent-tab.component';
     AuthLeftComponent,
     MaterialModuleModule,
     BarChartComponent,
-    SentTabComponent
+    SentTabComponent,
+    ReceivedComponent,
+    DraftComponent,
+    TemplateComponent
 
     
   ]
