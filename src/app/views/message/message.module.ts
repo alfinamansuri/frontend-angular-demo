@@ -3,18 +3,23 @@ import { CommonModule } from '@angular/common';
 import { MessageComponent } from './message.component';
 import { MessageRoutingModule } from './message-routing.module';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { ChooseTemplateComponent } from './choose-template/choose-template.component';
+import { CreateMsgComponent } from './create-msg/create-msg.component';
 
 
 
 @NgModule({
   declarations: [
-    MessageComponent
+    MessageComponent,
+    ChooseTemplateComponent,
+    CreateMsgComponent,
   ],
   imports: [
     CommonModule,
     MessageRoutingModule,
-    SharedModule
+    SharedModule,
+    
 
-  ]
+  ],
 })
 export class MessageModule { }

@@ -1,0 +1,40 @@
+<div class="inner-pages-wrapper">
+
+    <app-side-bar></app-side-bar>
+    <app-header></app-header>
+    
+    <div class="inner-pages">
+      <div class="inner-block">
+        <div class="msg-header-wrap">
+            <div class="back-header">
+            <a href="#" title="Back"><i><img src="./assets/images/black-right-arrow.svg"></i><span>Back</span></a>
+          <h2>Choose Template </h2>
+          </div>
+        </div>
+        <div class="stepper-block">
+            <button mat-raised-button (click)="isLinear = true" id="toggle-linear">Enable linear mode</button>
+
+<mat-horizontal-stepper [linear]="isLinear" #stepper="matHorizontalStepper">
+  <mat-step>
+        step1
+  </mat-step>
+  <mat-step>
+   step2
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>
+
+        </div>
+       
+       
+        </div>
+        </div>
+        </div>
+

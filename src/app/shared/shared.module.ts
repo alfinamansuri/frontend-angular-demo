@@ -17,6 +17,7 @@ import { TemplateComponent } from './template/template.component';
 
 
 
+
 @NgModule({
   declarations: [
     AuthLeftComponent,
@@ -28,7 +29,8 @@ import { TemplateComponent } from './template/template.component';
     PaginationComponent,
     ReceivedComponent,
     DraftComponent,
-    TemplateComponent
+    TemplateComponent,
+   
 
   ],
   imports: [
@@ -49,7 +51,8 @@ import { TemplateComponent } from './template/template.component';
     SentTabComponent,
     ReceivedComponent,
     DraftComponent,
-    TemplateComponent
+    TemplateComponent,
+   
 
     
   ]

@@ -11,6 +11,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSelectModule} from '@angular/material/select';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatStepperModule} from '@angular/material/stepper';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatTableModule,
     MatSelectModule,
     MatTabsModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatStepperModule
 
  
   ],
@@ -42,7 +44,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatTableModule,
     MatSelectModule,
     MatTabsModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatStepperModule
   
   ]
 })
