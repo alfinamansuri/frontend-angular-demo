@@ -1,0 +1,82 @@
+@import 'general';
+
+
+
+.mat-stepper-horizontal{
+    background-color:transparent; 
+    ::ng-deep .mat-horizontal-stepper-header-container{
+        @include rem-fallback(max-width,507);width:100%;margin:0 auto;
+        ::ng-deep .mat-step-header{
+            overflow:visible;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            &:hover{
+                background-color: transparent;
+            }
+            .mat-step-icon{
+                background-color: $gray-1;
+                border:1px solid $dropdown-border;
+                @include rem-fallback(border-radius,6);
+                @include rem-fallback(width,30);
+                @include rem-fallback(height,30);
+                @include rem-fallback(font-size,14);
+                @include rem-fallback(line-height,21);
+                color: $light-gray-1;
+                font-weight:500;
+                margin-right:0;
+                position:static;
+                z-index: 2;
+                @include rem-fallback(margin-bottom,6);
+                &.mat-step-icon-selected{
+                    background-color:$blue;
+                    border-color:transparent;
+                    color:$white;
+                   
+                }
+                &.mat-step-icon-state-edit{
+                    border-color:$blue;
+                    .mat-icon{
+                        background-image: url('/assets/images/pen-icon.svg');
+                        background-position: center;
+                        background-size:cover;
+                        background-repeat:no-repeat;
+                        font-size:0;
+                    }
+                }
+                .mat-step-icon-content{
+                    top:48% !important;
+                }
+            }
+            .mat-step-label{
+                @include rem-fallback(font-size,16);
+                @include rem-fallback(line-height,24);
+                font-weight:400;
+                color:$light-gray-1;
+                position: absolute;
+                top:100%;
+                &.mat-step-label-selected{
+                    color:$blue;
+                }
+                
+            }
+            .mat-focus-indicator{
+                display:none;
+            }
+        }
+        .mat-horizontal-stepper-header{
+            padding:0;
+            width:auto;
+           
+        }
+        .mat-horizontal-stepper-header[ng-reflect-state=edit] + .mat-stepper-horizontal-line{
+            border-color:$blue;
+        }
+        .mat-stepper-horizontal-line{
+            background-color:$input-border ;
+        }
+    }
+
+}

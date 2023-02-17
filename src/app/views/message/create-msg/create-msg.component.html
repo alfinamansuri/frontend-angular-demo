@@ -12,17 +12,21 @@
           </div>
         </div>
         <div class="stepper-block">
-            <button mat-raised-button (click)="isLinear = true" id="toggle-linear">Enable linear mode</button>
+           
 
 <mat-horizontal-stepper [linear]="isLinear" #stepper="matHorizontalStepper">
   <mat-step>
-        step1
+    <ng-template matStepLabel>Draft Message</ng-template>
+        <div class="stepper-detail">
+            
+        </div>
   </mat-step>
   <mat-step>
+    <ng-template matStepLabel>Choose Recipients</ng-template>
    step2
   </mat-step>
   <mat-step>
-    <ng-template matStepLabel>Done</ng-template>
+    <ng-template matStepLabel>Preview and Send</ng-template>
     You are now done.
     <div>
       <button mat-button matStepperPrevious>Back</button>
