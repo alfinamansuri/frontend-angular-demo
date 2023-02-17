@@ -12,6 +12,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatStepperModule} from '@angular/material/stepper';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     MatSelectModule,
     MatTabsModule,
     MatPaginatorModule,
-    MatStepperModule
+    MatStepperModule,
+    MatFormFieldModule
 
  
   ],
@@ -45,7 +48,8 @@ import {MatStepperModule} from '@angular/material/stepper';
     MatSelectModule,
     MatTabsModule,
     MatPaginatorModule,
-    MatStepperModule
+    MatStepperModule,
+    MatFormFieldModule
   
   ]
 })

@@ -53,7 +53,7 @@ $school_angular-demo-theme: mat.define-light-theme((
 
 
 .secondary-btn{@include rem-fallback(border-radius,6);border:1px solid transparent !important;
-  @include rem-fallback(min-height,56);@include rem-fallback(max-width,291);@include rem-fallback(font-size,16);font-weight:500;}
+  @include rem-fallback(min-height,56);@include rem-fallback(max-width,291);@include rem-fallback(font-size,16);font-weight:500;text-decoration:none;}
   .secondary-btn i{display:inline-block;@include rem-fallback(margin-right,5);@include rem-fallback(width,15);}
 
   .secondary-btn i img{width:100%} 

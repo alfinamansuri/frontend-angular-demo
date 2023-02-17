@@ -78,5 +78,57 @@
             background-color:$input-border ;
         }
     }
+    ::ng-deep .mat-horizontal-content-container{
+        padding:0;
+    }
 
+}
+
+
+
+
+.stepper-detail{
+    @include rem-fallback(padding-top,80);
+    .form-outer{
+       
+        display:flex;
+        
+        .mat-mdc-checkbox{
+            margin-top:0;
+        }
+        label{
+            width: 15%;
+        }
+        form{
+            @include rem-fallback(padding-left,50);
+            display:flex;
+            flex-direction: column;
+            width:85%;
+           
+            .checkbox-wrapper{
+                display:flex;
+                .custom-checkbox{
+                    @include rem-fallback(padding,0,10);
+                    @include rem-fallback(margin-bottom,24);
+                }
+            }
+            textarea{
+                &.form-control{
+                    @include rem-fallback(height,46);
+                    @include rem-fallback(padding,10);
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+.common-block{
+    background-color: $white;
+    @include rem-fallback(padding,20);
+    @include rem-fallback(border-radius,12);
+    box-shadow:0px 5px 20px 0px #0000000A;
+    @include rem-fallback(margin-bottom,30);
 }
