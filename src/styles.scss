@@ -113,8 +113,12 @@ $school_angular-demo-theme: mat.define-light-theme((
 
 
 /* custom-checkbox*/
-.custom-checkbox{@include rem-fallback(margin,30,0,30,0);}
-.custom-checkbox .mdc-checkbox .mdc-checkbox__background{left:0 !important;top:7px !important; border:1px solid $input-border;@include rem-fallback(width,15);@include rem-fallback(height,15);}
+.checkbox-wrapper{
+  @include rem-fallback(margin,0,-10,0,-10);
+}
+
+
+.custom-checkbox .mdc-checkbox .mdc-checkbox__background{left:0 !important;top:7px !important; border:1px solid $input-border!important;@include rem-fallback(width,15);@include rem-fallback(height,15);}
 .custom-checkbox label{font-weight:400;color:$light-black;@include rem-fallback(font-size,14);@include rem-fallback(line-height,21);}
 .custom-checkbox.mat-mdc-checkbox.mat-accent .mdc-checkbox--selected ~ .mdc-checkbox__ripple{background: $orange !important;}
 .custom-checkbox.mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background{border-color:$orange !important;background-color:$orange !important;}

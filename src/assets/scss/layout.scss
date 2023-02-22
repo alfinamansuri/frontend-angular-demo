@@ -219,7 +219,7 @@ input{
     .user-table-header{
         display:flex;
         justify-content:space-between;
-        align-items:flex-start;
+        align-items:center;
         @include rem-fallback(margin-bottom,20);
         h3{
             padding:0;
@@ -578,9 +578,49 @@ input{
 }
 
 
-
-
-
-
-
 /*end*/
+
+
+/* custom radio button */
+
+.radiobutton-wrapper{
+    margin-left:-10px;
+    margin-right:-10px;
+}
+.custom-radiobutton{
+   
+    label{
+        font-weight: 400;
+        @include rem-fallback(font-size,14);
+        @include rem-fallback(line-height,21);
+        padding-left:8px !important;
+
+    }
+    .mdc-radio__outer-circle{
+        border-color:$input-border !important;
+        border-width:1px !important;
+    }
+    .mdc-radio__native-control:checked+.mdc-radio__background .mdc-radio__inner-circle,
+   .mdc-radio__native-control:enabled:checked+.mdc-radio__background .mdc-radio__outer-circle{
+        border-color:$orange !important;
+    }
+}
+
+:ng-deep .mat-radio-ripple,:ng-deep .mat-radio-persistent-ripple,:ng-deep .mat-mdc-focus-indicator{
+    display:none !important;
+    --mat-mdc-radio-ripple-color: transparent  ! important;
+}
+.mat-mdc-radio-button.mat-mdc-radio-checked .mat-ripple-element{
+    background-color: transparent !important;
+    opacity: 0 !important;
+}
+.mat-mdc-radio-button .mdc-radio{
+    padding:0 !important;
+}
+.mat-mdc-radio-button{
+    @include rem-fallback(padding,0,10);
+}
+
+
+
+/* end*/

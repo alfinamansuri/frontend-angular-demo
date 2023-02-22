@@ -99,8 +99,8 @@
                       </div>
                       <div class="file-uploader">
                         <!-- <input matInput placeholder="Optional File to Upload"  type="" class="form-control"> -->
-                        <input type="file" #uploadControl id="fileControlInput"  name="fileControlInput"
-                        multiple="multiple" accept="image/*" />
+                        <button mat-button class="secondary-btn form-control">Optional File to Upload</button>
+                        <input type="file" name="fileControlInput"/>
                       </div>
                       <div class="msg-input-wrapper">
                           <label>Send Test Email :</label>
@@ -125,15 +125,145 @@
                   </div>
                   </div>
                 </div>
-        
-             
+                <div class="common-block">
+                  <h6>Facebook</h6>
+                  <div class="common-block-inner">
+                    <div class="text-msg-content">
+                      <div class="text-msg-content-inner">
+                        <div class="msg-content-outer">
+                      
+                          
+                          <div class="msg-content">
+                              <div class="msg-content-inner">
+                                  <p>Hi School, just wanted to say you guys are great :)</p>
+
+                              </div>
+                            </div>
+                         </div> 
+                      </div>
+                     
+                      </div>
+                      <div class="text-msg-content">
+                        <div class="text-msg-content-inner">
+                          <div class="msg-content-outer">
+                        
+                           
+                            <div class="msg-content">
+                              
+                                <div class="msg-content-inner">
+                                  <div class="msg-content-header">
+                                    <i><img src="./assets/images/education.svg"></i>
+                                    <div class="msg-title">
+                                        <h6>Nodoworry School</h6>
+                                        <span>2 min</span>
+                                    </div>
+                                </div>
+                                    <p>Hi School, just wanted to say you guys are great :)</p>
+  
+                                </div>
+                              </div>
+                           </div> 
+                        </div>
+                       
+                        </div>
+                   
+                </div>
+                </div>
+                <div class="btn-block">
+
+           
+             <button mat-button class="primary-btn">
+                  Next
+             </button>
+            </div>
 
               </div>
+              
         </div>
   </mat-step>
   <mat-step>
-    <ng-template matStepLabel>Choose Recipients</ng-template>
-   step2
+    <ng-template matStepLabel >Choose Recipients</ng-template>
+    <div class="stepper-detail choose-recipients">
+      <div class="stepper-detail-inner">
+      <div class="user-table-wrapper">
+        <div class="user-table-header">
+          <h3>Recipients List</h3>
+          <button mat-button title="" class="secondary-btn pink-btn"><i><img src="./assets/images/orange-people.svg"></i> Add additional People </button>
+        </div>
+        <div class="user-table">
+        <mat-table #table  [dataSource]="dataSource">
+    
+          <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef> Groups </mat-header-cell>
+            <!-- <mat-cell *matCellDef="let element" [innerHTML]="element.name">
+            </mat-cell> -->
+
+            <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+          </ng-container>
+      
+    
+      
+          <ng-container matColumnDef="date">
+            <mat-header-cell *matHeaderCellDef>Created <i><img src="./assets/images/up-down-arrow.svg"></i>  </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.date}} </mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="ndate">
+              <mat-header-cell *matHeaderCellDef>Last Update<i><img src="./assets/images/up-down-arrow.svg"></i> </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.ndate}} </mat-cell>
+            </ng-container>
+
+          <ng-container matColumnDef="no">
+            <mat-header-cell *matHeaderCellDef> Number of Member </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.no}} </mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="hide">
+              <mat-header-cell *matHeaderCellDef>Action </mat-header-cell>
+              <mat-cell *matCellDef="let element">
+         
+              <div class="actions">
+                <mat-checkbox class=" custom-checkbox">Send</mat-checkbox>
+              </div> 
+
+              </mat-cell>
+            </ng-container>
+         
+      
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+        </div>
+      </div>
+      <div class="form-outer common-block">
+        <span>2 Groups Selected</span>
+        <div class="common-block-inner">
+        <label>For students in groups, include:</label>
+      <form class="form">
+        <div class="radiobutton-wrapper">
+          <mat-radio-button   value="1" class="custom-radiobutton" >Caregivers only</mat-radio-button>
+          <mat-radio-button   value="2" class="custom-radiobutton" >Students only</mat-radio-button>
+          <mat-radio-button   value="3" class="custom-radiobutton" >Caregivers as well as students</mat-radio-button>
+      
+        </div>
+        <div class="checkbox-wrapper">
+        <mat-checkbox class=" custom-checkbox">Text Message</mat-checkbox>
+     
+      
+        <mat-checkbox class=" custom-checkbox">Email</mat-checkbox>
+     
+      
+        <mat-checkbox class=" custom-checkbox">Facebook</mat-checkbox>
+      </div>
+  
+          <textarea matInput placeholder="" class="form-control"></textarea>
+        </form>
+      </div>
+      <div class="group-button-block">
+        <button mat-button class="border-btn">Previous</button>
+          <button mat-button class="primary-btn">next</button>
+      </div>
+      </div>
+      </div>
+      </div>
   </mat-step>
   <mat-step>
     <ng-template matStepLabel>Preview and Send</ng-template>

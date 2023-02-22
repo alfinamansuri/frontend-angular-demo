@@ -13,6 +13,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 
@@ -32,7 +33,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatTabsModule,
     MatPaginatorModule,
     MatStepperModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatRadioModule
 
  
   ],
@@ -49,7 +51,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatTabsModule,
     MatPaginatorModule,
     MatStepperModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatRadioModule
   
   ]
 })

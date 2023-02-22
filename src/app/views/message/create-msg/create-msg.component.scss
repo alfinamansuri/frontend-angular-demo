@@ -5,7 +5,8 @@
 .mat-stepper-horizontal{
     background-color:transparent; 
     ::ng-deep .mat-horizontal-stepper-header-container{
-        @include rem-fallback(max-width,507);width:100%;margin:0 auto;
+        @include rem-fallback(max-width,507);width:100%;margin:0 auto 60px;
+        z-index: 0;
         ::ng-deep .mat-step-header{
             overflow:visible;
             display: flex;
@@ -88,7 +89,7 @@
 
 
 .stepper-detail{
-    @include rem-fallback(padding-top,80);
+    // @include rem-fallback(padding-top,80);
     .form-outer{
        
         display:flex;
@@ -243,6 +244,51 @@
 
 }
 
+
+.msg-content-header{
+    @include rem-fallback(margin-bottom,13);
+    display: flex;
+    i{
+        display: inline-block;
+        @include rem-fallback(width,44);
+        @include rem-fallback(height,44);
+        @include rem-fallback(padding,8);
+    border: 1px solid $input-border;
+    border-radius: 50%;
+    @include rem-fallback(margin-right,5);
+    img{
+        width:100%;
+    }
+
+    }
+    h6{
+        @include rem-fallback(font-size,14);
+        @include rem-fallback(line-height,18);
+        font-weight:500;
+        @include rem-fallback(margin-bottom,0);
+    }
+    span{
+        display:inline-block;
+        @include rem-fallback(font-size,12);
+        @include rem-fallback(line-height,18);
+        font-weight:400;
+        color:$light-gray-1;
+        
+    }
+
+
+}
+.btn-block{
+    text-align: right;
+    button{
+        display:inline-block;
+        @include rem-fallback(min-width,180);
+        width:auto;
+        text-align: center;
+    }
+
+}
+
 .msg-input-wrapper{
     display:flex;
     align-items: center;
@@ -319,7 +365,70 @@
 
 .file-uploader{
     @include rem-fallback(margin-top,20);
+    position: relative;
+    .secondary-btn{
+        color:$blue;
+        font-size:14px !important;
+        @include rem-fallback(line-height,21);
+        font-weight:500;
+        @include rem-fallback(border-radius,6);
+       
+        @include rem-fallback(min-height,50);
+        width:100%;
+        border:1px dotted $input-border !important;
+        z-index:0;
+        display:block;
+        min-width:100%;
+        cursor: pointer;
+        // background-image: url("assets/images/fileupload-border.svg");
+    }
     input{
-        border:1px dotted #CCCCCC;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        opacity:0;
+        cursor: pointer;
+        @include rem-fallback(min-height,50);
+    }
+}
+
+::ng-deep.cdk-column-no{
+    width:50%;
+}
+
+.choose-recipients{
+    &.stepper-detail{
+        .common-block{
+            span{
+                color:$blue;
+                font-weight:500;
+                @include rem-fallback(font-size,16);
+                @include rem-fallback(line-height,24);
+                @include rem-fallback(margin-bottom,5);
+            }
+            .common-block-inner{
+                label{
+                    @include rem-fallback(min-width,287);
+                }
+            }
+        }
+    }
+}
+.radiobutton-wrapper{
+    @include rem-fallback(margin-bottom,20);
+}
+
+
+.group-button-block{
+    @include rem-fallback(margin-top,25);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    button{
+        margin-bottom: 0;
+        @include rem-fallback(min-width,180);
+        @include rem-fallback(min-height,56);
+        width:auto
     }
 }
