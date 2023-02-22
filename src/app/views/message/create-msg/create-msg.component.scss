@@ -166,6 +166,7 @@
     flex: 0 0 50%;
     width:50%;
     @include rem-fallback(padding,0,10);
+}
     .msg-content-inner{
         @include rem-fallback(padding,20);
         @include rem-fallback(min-height,170);
@@ -216,7 +217,7 @@
         border:1px solid $input-border;
         @include rem-fallback(border-radius,12);
     }
-}
+
 
 .live-preview{
     @include rem-fallback(padding,0,10);
@@ -230,6 +231,7 @@
     @include rem-fallback(padding,10);
     @include rem-fallback(max-width,353);
     width:100%;
+    position: relative;
     p{
         @include rem-fallback(font-size,14);
         @include rem-fallback(line-height,21);
@@ -241,6 +243,29 @@
 
         }
     }
+    .msg-shape{
+        background-color: #E6E5EB;
+    position: absolute;
+    display: block;
+    @include rem-fallback(left,-5);
+   bottom:0;
+   @include rem-fallback(height,9);
+   @include rem-fallback(width,12);
+
+    @include rem-fallback(border-bottom-right-radius,12);
+    z-index: 0;
+    &:before{
+        content: "";
+    position: absolute;
+    @include rem-fallback(width,12);
+    @include rem-fallback(height,10);
+    background-color: $white;
+    @include rem-fallback(left,-7);
+    bottom:0;
+    @include rem-fallback(border-bottom-right-radius,8);
+    } 
+    }
+    
 
 }
 
@@ -430,5 +455,93 @@
         @include rem-fallback(min-width,180);
         @include rem-fallback(min-height,56);
         width:auto
+    }
+}
+
+.preview{
+    position: relative;
+    h6{
+        @include rem-fallback(font-size,14);
+        @include rem-fallback(line-height,21);
+        font-weight:400;
+        a{
+            display:inline-block;
+            text-decoration:none;
+            @include rem-fallback(margin-right,2);
+        }
+    }
+    .common-block-inner{
+        .live-preview ,.school-detail ,.text-msg-content{
+            width:33.33%;
+            flex: 0 0 33.33%;
+            .msg-popup,.msg-content{
+                height:100%;
+            }
+        }
+        .msg-popup,.school-detail-header,.school-body,.msg-content-inner{
+            @include rem-fallback(padding,15);
+            p{
+                @include rem-fallback(font-size,12);
+                @include rem-fallback(line-height,20);
+                font-weight:400;
+            }
+        }
+        .school-detail-header{
+                h4{
+                    font-weight:500;
+                    @include rem-fallback(font-size,12);
+                @include rem-fallback(line-height,20);
+
+                }
+                i{
+                    @include rem-fallback(width,27);
+                    img{
+                        width:100%;
+                    }
+                }
+        }
+        .msg-content-header{
+            h6{
+                font-weight:500;
+                    @include rem-fallback(font-size,14);
+                @include rem-fallback(line-height,21);
+            }
+        }
+    }
+}
+
+.preview-title{
+    font-weight:500;
+    @include rem-fallback(line-height,30);
+    padding-bottom:0;
+    @include rem-fallback(margin-bottom,20);
+
+}
+
+.explore-btn{
+    background-color: $light-blue-1;
+    @include rem-fallback(border-radius,28);
+    @include rem-fallback(min-width,110);
+    @include rem-fallback(min-height,24);
+    @include rem-fallback(padding,5);
+    position: absolute;
+    @include rem-fallback(bottom,-13);
+    left: 50%;
+    transform:translateX(-50%);
+    text-decoration:none;
+    @include rem-fallback(font-size,10);
+    font-weight:500;
+    @include rem-fallback(line-height,15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid transparent;
+    span{
+        display:inline-block;
+        @include rem-fallback(margin-right,5);
+    }
+    &:hover{
+        border-color:$blue;
+        
     }
 }

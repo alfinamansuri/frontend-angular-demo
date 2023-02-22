@@ -620,6 +620,20 @@ input{
 .mat-mdc-radio-button{
     @include rem-fallback(padding,0,10);
 }
+.mdc-radio__background{
+   width:15px !important;
+   height:15px !important;
+}
+.mat-mdc-radio-button {
+    .mdc-radio{
+        margin-top:-3px;
+    }
+}
+.mdc-radio__inner-circle{
+    top: -1px !important;
+    left: -1.02px !important;
+    border-width: 9px !important;
+}
 
 
 

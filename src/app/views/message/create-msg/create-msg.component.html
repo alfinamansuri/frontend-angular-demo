@@ -70,6 +70,7 @@
                         <h6>Live Preview</h6>
                             <div class="msg-popup">
                               <p><span>NDS</span>: Hi School, just wanted to say you guys are great.</p>
+                              <span class="msg-shape"></span>
                             </div>
                       </div>
                   </div>
@@ -267,10 +268,52 @@
   </mat-step>
   <mat-step>
     <ng-template matStepLabel>Preview and Send</ng-template>
-    You are now done.
-    <div>
-      <button mat-button matStepperPrevious>Back</button>
-      <button mat-button (click)="stepper.reset()">Reset</button>
+  
+
+    <h5 class="preview-title">Preview</h5>
+    <div class="common-block preview">
+          <h6>You are sending “G’day Message” via <a href="#" title="Text message">Text message, </a>  <a href="#" title="Email"> Email, </a>  <a href="#" title="Facebook">Facebook</a></h6>
+          
+          <div class="common-block-inner">
+            <div class="live-preview">
+            <div class="msg-popup">
+              <p><span>NDS</span>: Hi School, just wanted to say you guys are great. Our schools is closing to early. please get your children. please collect children at 2pm today from the front gate. Our schools is closing to early. please collect children at 2pm today from the front gate. Our School will reopen tomorrow.</p>
+              <span class="msg-shape"></span>
+            </div>
+            </div>
+            <div class="school-detail">
+              <div class="school-detail-inner">
+            <div class="school-detail-header">
+                    <h4>Nodoworry School</h4>
+                    <i><img src="./assets/images/education.svg"></i>
+                  </div>
+                  <div class="school-body">
+                      <p>Hi School, just wanted to say you guys are great. 
+                        Our schools is  closing to early. please get your children. please collect children at 2pm today from the front gate. Our School will reopen...</p>
+                  </div>
+            </div>
+
+          </div>
+          <div class="text-msg-content">
+          <div class="msg-content">
+                              
+            <div class="msg-content-inner">
+              <div class="msg-content-header">
+                <i><img src="./assets/images/education.svg"></i>
+                <div class="msg-title">
+                    <h6>Nodoworry School</h6>
+                    <span>2 min</span>
+                </div>
+            </div>
+                <p>Hi School, just wanted to say you guys are great. Our schools is closing to early. please get your children. please collect children at 2pm today from the front gate. Our School w...</p>
+
+            </div>
+          </div>
+          </div>
+          </div>
+
+          <a href="#" title="Expand View" class="explore-btn"><span>Expand View</span><i><img src="./assets/images/blue-down-arrow.svg" alt=""></i></a>
+
     </div>
   </mat-step>
 </mat-horizontal-stepper>
