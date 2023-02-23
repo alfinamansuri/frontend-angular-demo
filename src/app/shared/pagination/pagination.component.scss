@@ -1,69 +1,69 @@
 @import 'general';
 
 
-.pagination-wrapper{
-    display:flex;
-    justify-content:space-between;
-    align-items: center;
-    p{
-        @include rem-fallback(font-size,16);
-        @include rem-fallback(line-height,20);
-        color:$black;
-        font-weight:500;
-        margin-bottom:0;
-    }
-    ul{
-        display:flex;
-        @include rem-fallback(margin,0,-5);
-        li{
-            @include rem-fallback(padding,0,5);
+// .pagination-wrapper{
+//     display:flex;
+//     justify-content:space-between;
+//     align-items: center;
+//     p{
+//         @include rem-fallback(font-size,16);
+//         @include rem-fallback(line-height,20);
+//         color:$black;
+//         font-weight:500;
+//         margin-bottom:0;
+//     }
+//     ul{
+//         display:flex;
+//         @include rem-fallback(margin,0,-5);
+//         li{
+//             @include rem-fallback(padding,0,5);
 
-            a{  
-                text-decoration:none;
-                display:inline-flex;
-                justify-content:center;
-                align-items: center;
-                border:1px solid $pagination-border;
-                @include rem-fallback(width,35);
-                @include rem-fallback(height,35);
-                @include rem-fallback(font-size,16);
-                @include rem-fallback(line-height,20);
-                font-weight:400;
-                color:$light-gray-1;
-                @include rem-fallback(border-radius,6);
-                &:hover{
-                    background-color:$gray;
+//             a{  
+//                 text-decoration:none;
+//                 display:inline-flex;
+//                 justify-content:center;
+//                 align-items: center;
+//                 border:1px solid $pagination-border;
+//                 @include rem-fallback(width,35);
+//                 @include rem-fallback(height,35);
+//                 @include rem-fallback(font-size,16);
+//                 @include rem-fallback(line-height,20);
+//                 font-weight:400;
+//                 color:$light-gray-1;
+//                 @include rem-fallback(border-radius,6);
+//                 &:hover{
+//                     background-color:$gray;
                   
-                }
-                .normal-img{
-                    display:block;
-                }
-                .hover-img{
-                    display:none;
-                }
+//                 }
+//                 .normal-img{
+//                     display:block;
+//                 }
+//                 .hover-img{
+//                     display:none;
+//                 }
 
-            }
-            &.active{
+//             }
+//             &.active{
                 
-                a{
-                    background-color: $orange !important;
-                    color:$white;
-                    border-color:transparent;
-                    background-color:$gray;
-                    .normal-img{
-                        display:none;
-                    }
-                    .hover-img{
-                        display:block;
-                    }
-                }
+//                 a{
+//                     background-color: $orange !important;
+//                     color:$white;
+//                     border-color:transparent;
+//                     background-color:$gray;
+//                     .normal-img{
+//                         display:none;
+//                     }
+//                     .hover-img{
+//                         display:block;
+//                     }
+//                 }
                
-            }
-            &.prev{
-                a{
-                    transform: rotate(180deg);
-                }
-            }
-        }
-    }
-}
+//             }
+//             &.prev{
+//                 a{
+//                     transform: rotate(180deg);
+//                 }
+//             }
+//         }
+//     }
+// }

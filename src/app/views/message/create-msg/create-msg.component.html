@@ -8,7 +8,7 @@
         <div class="msg-header-wrap">
             <div class="back-header">
             <a href="#" title="Back"><i><img src="./assets/images/black-right-arrow.svg"></i><span>Back</span></a>
-          <h2>Choose Template </h2>
+          <h2>Create a New Message</h2>
           </div>
         </div>
         <div class="stepper-block">
@@ -315,6 +315,128 @@
           <a href="#" title="Expand View" class="explore-btn"><span>Expand View</span><i><img src="./assets/images/blue-down-arrow.svg" alt=""></i></a>
 
     </div>
+    <div class="stepper-tabbing">
+      <div class="stepper-tabbing-header">
+          <h6 class="preview-title">Recipients List</h6>
+          <div class="steppper-tab-button tab-content-header">
+            <div class="search-input">
+              <mat-form-field class="example-full-width form-field">
+                <input matInput placeholder="Search Schools" type="search" class="form-control">
+                <i><img src="./assets/images/search.svg"></i>
+              </mat-form-field>
+              </div>
+              <button mat-button title="" class="secondary-btn pink-btn"><i><img src="./assets/images/orange-people.svg"></i> Add additional People </button>
+
+          </div>
+      </div>
+
+
+      <div class="tabbing-block">
+        <mat-tab-group animationDuration="0ms">
+          <mat-tab label="Caregivers">
+            <div class="user-table-wrapper">
+              <div class="user-table">
+              <mat-table #table  [dataSource]="dataSource">
+          
+                <ng-container matColumnDef="name">
+                  <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+                  <!-- <mat-cell *matCellDef="let element" [innerHTML]="element.name">
+                  </mat-cell> -->
+      
+                  <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+                </ng-container>
+            
+          
+            
+                <ng-container matColumnDef="date">
+                  <mat-header-cell *matHeaderCellDef>Created <i><img src="./assets/images/up-down-arrow.svg"></i>  </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> {{element.date}} </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="ndate">
+                    <mat-header-cell *matHeaderCellDef>Last Update<i><img src="./assets/images/up-down-arrow.svg"></i> </mat-header-cell>
+                    <mat-cell *matCellDef="let element"> {{element.ndate}} </mat-cell>
+                  </ng-container>
+      
+                <ng-container matColumnDef="no">
+                  <mat-header-cell *matHeaderCellDef> Number of Member </mat-header-cell>
+                  <mat-cell *matCellDef="let element"> {{element.no}} </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="hide">
+                    <mat-header-cell *matHeaderCellDef>Action </mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+               
+                    <div class="actions">
+                      <mat-checkbox class=" custom-checkbox">Send</mat-checkbox>
+                    </div> 
+      
+                    </mat-cell>
+                  </ng-container>
+               
+            
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+              </mat-table>
+              </div>
+            </div>
+            <div class="pagination-wrapper">
+              <p>Showing 10 of 28 entries</p>
+              <ul>
+                <li class="pagination-link prev"><a href="#" title=""><i><img src="./assets/images/black-right-arrow.svg" class="normal-img"><img src="./assets/images/white-right-arrow.svg" class="hover-img"></i></a></li>
+                <li class="pagination-link active"><a href="#" title="1">1</a></li>
+                <li class="pagination-link"><a href="#" title="2">2</a></li>
+                 <li class="pagination-link"><a href="#" title="3">3</a></li>
+                  <li class="pagination-link next"><a href="#" title=""><i><img src="./assets/images/black-right-arrow.svg" class="normal-img"><img src="./assets/images/white-right-arrow.svg" class="hover-img"></i></a></li>
+              </ul>
+          </div>
+
+          </mat-tab>
+          <mat-tab label="All Student"><app-received></app-received></mat-tab>
+        </mat-tab-group>
+      </div>
+
+
+
+    </div>
+    <div class="preview-tab-btn common-block">
+      <div class="caregiver-wrapper">
+        <div class="caregiver">
+            <span class="title">Caregivers</span>
+            <p>Total Recipient : 52</p><p>Exclude Recipient : 03</p>
+
+        </div>
+        <div class="student">
+          <span>All Student</span>
+          <p>Total Recipient : 250</p><p>Exclude Recipient : 00</p>
+
+        </div>
+      </div>
+
+        <div class="preview-btn-block">
+            <div class="prev-btn">
+                <button mat-button class="border-btn">Previous</button>
+            </div>
+            <div class="next-btn">
+              <ul>      
+                <li>
+                    <button mat-button class="pink-btn">Save as Template</button>
+                </li>
+                <li>
+              <button mat-button class="pink-btn">Schedule</button>
+                </li>
+                <li>
+              <button mat-button class="pink-btn">Save as Draft</button>
+                </li>
+                <li>
+              <button mat-button class="primary-btn">Send</button>
+                </li>
+            </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+
   </mat-step>
 </mat-horizontal-stepper>
 

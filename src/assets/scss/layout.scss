@@ -146,7 +146,7 @@ input{
        .form-field {
             @include rem-fallback(min-width,287);
             .form-control{
-                @include rem-fallback(min-height,46);
+                // @include rem-fallback(min-height,46);
                 font-size:14px !important;
                 @include rem-fallback(padding-left,35);
                 @include rem-fallback(padding-right,15);
@@ -156,7 +156,7 @@ input{
 
             }
             i{
-                @include rem-fallback(top,10);
+                @include rem-fallback(top,8);
                 @include rem-fallback(width,13);
                 @include rem-fallback(left,15);
                 img{
@@ -638,3 +638,131 @@ input{
 
 
 /* end*/
+
+
+.stepper-tabbing{
+    .tabbing-block{
+            // display:none;
+        .tab-content-header{
+            display:none !important;
+        }
+    }
+  }
+
+
+  /* pagination start */
+  .pagination-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    p{
+        @include rem-fallback(font-size,16);
+        @include rem-fallback(line-height,20);
+        color:$black;
+        font-weight:500;
+        margin-bottom:0;
+    }
+    ul{
+        display:flex;
+        @include rem-fallback(margin,0,-5);
+        li{
+            @include rem-fallback(padding,0,5);
+
+            a{  
+                text-decoration:none;
+                display:inline-flex;
+                justify-content:center;
+                align-items: center;
+                border:1px solid $pagination-border;
+                @include rem-fallback(width,35);
+                @include rem-fallback(height,35);
+                @include rem-fallback(font-size,16);
+                @include rem-fallback(line-height,20);
+                font-weight:400;
+                color:$light-gray-1;
+                @include rem-fallback(border-radius,6);
+                &:hover{
+                    background-color:$gray;
+                  
+                }
+                .normal-img{
+                    display:block;
+                }
+                .hover-img{
+                    display:none;
+                }
+
+            }
+            &.active{
+                
+                a{
+                    background-color: $orange !important;
+                    color:$white;
+                    border-color:transparent;
+                    background-color:$gray;
+                    .normal-img{
+                        display:none;
+                    }
+                    .hover-img{
+                        display:block;
+                    }
+                }
+               
+            }
+            &.prev{
+                a{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+  /*end*/
+
+
+  /* tabbing css start*/
+  .tabbing-block{
+    ::ng-deep .mdc-tab{
+        flex-grow:initial !important;
+        @include rem-fallback(padding,0,15);
+        ::ng-deep .mdc-tab__text-label{
+            color:$light-black-text;
+            @include rem-fallback(font-size,20);
+            @include rem-fallback(line-height ,30);
+            font-weight:400;
+        }
+        &.mdc-tab--active{
+            ::ng-deep .mdc-tab__text-label{
+            color:$blue;
+            font-weight:400;
+            }
+           ::ng-deep .mdc-tab-indicator{
+                span{
+                    border-color: $blue;
+                }
+            }
+        }
+        ::ng-deep .mdc-tab-indicator{
+            span{
+                border-bottom:1px solid transparent;
+            }
+        }
+       
+    }
+    ::ng-deep .mat-mdc-tab-header{
+        border-bottom:1px solid $tab_border;
+    }
+   
+}
+
+
+
+  /*end*/

@@ -155,7 +155,7 @@
         font-weight:500;
         @include rem-fallback(line-height,27);
         color:$light-black;
-        @include rem-fallback(margin-bottom,12);
+        @include rem-fallback(margin-bottom,20);
         padding-bottom:0;
 
     }
@@ -545,3 +545,88 @@
         
     }
 }
+
+
+.caregiver-wrapper{
+    display: flex;
+    flex-wrap:wrap;
+    span{
+        @include rem-fallback(font-size,16);
+        @include rem-fallback(line-height,24);
+        font-weight:500;
+        color:$blue;
+        @include rem-fallback(margin-bottom,2);
+        display:block;
+    }
+    p{
+        @include rem-fallback(font-size,14);
+        @include rem-fallback(line-height,21);
+        font-weight:400;
+        display: inline-block;
+        @include rem-fallback(margin-right,20);
+        
+    }
+    .caregiver{
+        @include rem-fallback(margin-right,20);
+    }
+    
+}
+
+.preview-tab-btn{
+    @include rem-fallback(margin-top,30); 
+}
+
+
+.preview-btn-block{
+    display: flex;
+    justify-content: space-between;
+    button{
+        @include rem-fallback(min-width,180);
+        @include rem-fallback(min-height,56);
+    }
+    .next-btn{
+        @include rem-fallback(padding-left,40);
+    }
+    ul{
+        @include rem-fallback(margin,0,-10); 
+        padding:0;
+        display: flex;
+        flex-wrap:wrap;
+        li{
+            @include rem-fallback(padding,0,10);
+            @include rem-fallback(margin,0,0,20,0);
+
+        }
+    }
+}
+
+
+.tabbing-block{
+    ::ng-deep .mat-mdc-tab{
+        flex-grow:initial !important;
+
+    }
+}
+::ng-deep .mat-mdc-tab-header{
+    @include rem-fallback(margin-bottom,30);
+}
+
+.stepper-tabbing-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.steppper-tab-button{
+    button{
+        @include rem-fallback(min-height,44);
+        @include rem-fallback(font-size,14);
+        font-weight: 500;
+        @include rem-fallback(margin-left,20);
+    }
+    .form-control{
+        @include rem-fallback(min-height,44);
+        
+    }
+}
+
+

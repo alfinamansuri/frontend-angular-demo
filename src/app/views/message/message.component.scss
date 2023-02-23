@@ -8,39 +8,7 @@
 
 
 
-.tabbing-block{
-    ::ng-deep .mdc-tab{
-        flex-grow:initial !important;
-        @include rem-fallback(padding,0,15);
-        ::ng-deep .mdc-tab__text-label{
-            color:$light-black-text;
-            @include rem-fallback(font-size,20);
-            @include rem-fallback(line-height ,30);
-            font-weight:400;
-        }
-        &.mdc-tab--active{
-            ::ng-deep .mdc-tab__text-label{
-            color:$blue;
-            font-weight:400;
-            }
-           ::ng-deep .mdc-tab-indicator{
-                span{
-                    border-color: $blue;
-                }
-            }
-        }
-        ::ng-deep .mdc-tab-indicator{
-            span{
-                border-bottom:1px solid transparent;
-            }
-        }
-       
-    }
-    ::ng-deep .mat-mdc-tab-header{
-        border-bottom:1px solid $tab_border;
-    }
-   
-}
+
 
 
 
