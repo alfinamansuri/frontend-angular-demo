@@ -156,7 +156,7 @@ input{
 
             }
             i{
-                @include rem-fallback(top,8);
+                @include rem-fallback(top,14);
                 @include rem-fallback(width,13);
                 @include rem-fallback(left,15);
                 img{
@@ -766,3 +766,57 @@ input{
 
 
   /*end*/
+
+
+
+  /* modal */
+
+
+  .close-modal{@include rem-fallback(width,15);@include rem-fallback(height,15); background-color:transparent;position:absolute;@include rem-fallback(top,15);@include rem-fallback(right,0);
+    &:hover{background-color:white;}
+    img{
+        @include rem-fallback(width,12);
+    }
+}
+.mat-mdc-button, .mat-mdc-outlined-button {
+    --mat-mdc-button-persistent-ripple-color:transparent !important; 
+    --mat-mdc-button-ripple-color:transparent !important;
+}
+
+
+
+/*end*/
+
+
+/* additional modal css start */
+.add-additional-header{
+    @include rem-fallback(padding,30);
+    h3{
+        font-weight:500;
+        margin:0;
+        padding:0;
+    }
+    .close-modal{
+        @include rem-fallback(top,35);
+    }
+}
+.add-additional-content{
+    @include rem-fallback(padding,0,30,30,30);
+    .form-field{
+        min-width:592px !important;
+    .form-control{
+        min-height: 46px !important;
+        min-width:592px;
+    }
+    i{
+        top:10px;
+    }
+}
+}
+
+
+
+
+
+
+/* end*/

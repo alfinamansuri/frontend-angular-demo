@@ -189,7 +189,7 @@
       <div class="user-table-wrapper">
         <div class="user-table-header">
           <h3>Recipients List</h3>
-          <button mat-button title="" class="secondary-btn pink-btn"><i><img src="./assets/images/orange-people.svg"></i> Add additional People </button>
+          <button mat-button title="" class="secondary-btn pink-btn"  (click)="openDialog()"><i><img src="./assets/images/orange-people.svg"></i> Add additional People </button>
         </div>
         <div class="user-table">
         <mat-table #table  [dataSource]="dataSource">
@@ -447,3 +447,7 @@
         </div>
         </div>
 
+
+
+
+        

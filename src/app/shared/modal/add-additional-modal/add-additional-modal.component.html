@@ -1,0 +1,90 @@
+
+<div class="add-additional-header">
+    <h3>Add Additional People</h3>
+    <button mat-button mat-dialog-close class="close-modal"><img src="./assets/images/close.svg"></button>
+</div>
+
+<div class="add-additional-content">
+<div class="tab-content">
+    <div class="tab-content-header sent-tab">
+            <div class="left-tab-header">
+                <div class="search-input">
+                <mat-form-field class="example-full-width form-field">
+                    <input matInput placeholder="Search" type="search" class="form-control">
+                    <i><img src="./assets/images/search.svg"></i>
+                  </mat-form-field>
+                </div>
+            </div>
+            <div class="right-tab-header">
+                <div class="dropdown-wrapper">
+                    <div class="dropdown-block">
+                        <mat-form-field appearance="fill" class="custom-deropdown">
+                          <mat-select [(value)]="selected">
+                            <mat-option value="1">User Role</mat-option>
+                            <mat-option value="2">Unreceived</mat-option>
+                            <mat-option value="3">Bounced</mat-option>
+                          </mat-select>
+                        </mat-form-field>
+  
+                      </div>
+                     
+                </div>
+            </div>
+    </div>
+    <div class="tab-content-detail">
+        <div class="tab-content-table">
+            <div class="user-table-wrapper">
+            <div class="user-table">
+                <div class="user-table-container mat-elevation-z8">
+                  <mat-table #table  [dataSource]="dataSource">
+    
+                    <ng-container matColumnDef="action">
+                      <mat-header-cell *matHeaderCellDef>  <mat-checkbox class=" custom-checkbox">Recipient</mat-checkbox> </mat-header-cell>
+                      <!-- <mat-cell *matCellDef="let element" [innerHTML]="element.name">
+                      </mat-cell> -->
+                   
+                      <mat-cell *matCellDef="let element">
+                        <mat-checkbox class=" custom-checkbox">{{element.action}}</mat-checkbox>    
+                    </mat-cell>
+                    </ng-container>
+                    
+                
+                
+                    <ng-container matColumnDef="role">
+                      <mat-header-cell *matHeaderCellDef> Role</mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.role}} </mat-cell>
+                    </ng-container>
+
+                  
+                
+                    <ng-container matColumnDef="email">
+                      <mat-header-cell *matHeaderCellDef>Email <i><img src="./assets/images/up-down-arrow.svg"></i>  </mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
+                    </ng-container>
+                  
+    
+                    <ng-container matColumnDef="no">
+                      <mat-header-cell *matHeaderCellDef>Phone Number</mat-header-cell>
+                      <mat-cell *matCellDef="let element"> {{element.no}} </mat-cell>
+                    </ng-container>
+                   
+                
+                    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                  </mat-table>
+                </div>
+            </div>
+            
+            
+              <app-pagination></app-pagination>
+                
+              </div>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+</div>

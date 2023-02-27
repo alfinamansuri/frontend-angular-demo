@@ -6,15 +6,7 @@
     }
     h3{@include rem-fallback(margin-bottom,20);padding-bottom:0;}
     p{display:block;@include rem-fallback(margin-bottom,20);}
-    .close{@include rem-fallback(width,15);@include rem-fallback(height,15); background-color:transparent;position:absolute;@include rem-fallback(top,15);@include rem-fallback(right,0);
-        &:hover{background-color:white;}
-        img{
-            @include rem-fallback(width,12);
-        }
-    }
+    
 }
 .modal-btn{@include rem-fallback(min-width,181);width:auto;}
-.mat-mdc-button, .mat-mdc-outlined-button {
-    --mat-mdc-button-persistent-ripple-color:transparent !important; 
-    --mat-mdc-button-ripple-color:transparent !important;
-}
+

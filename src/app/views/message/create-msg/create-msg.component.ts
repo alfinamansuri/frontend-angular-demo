@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import { AddAdditionalModalComponent } from 'src/app/shared/modal/add-additional-modal/add-additional-modal.component';
 
 @Component({
   selector: 'app-create-msg',
@@ -10,6 +12,11 @@ export class CreateMsgComponent {
   isLinear = true;
   displayedColumns = ['name','date','ndate','no','hide',];
   dataSource = ELEMENT_DATA;
+
+  constructor(public dialog: MatDialog) {}
+  openDialog() {
+    const dialogRef = this.dialog.open(AddAdditionalModalComponent);
+  }
 
 }
 

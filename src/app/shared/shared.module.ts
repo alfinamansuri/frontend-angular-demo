@@ -12,6 +12,7 @@ import { PaginationComponent } from './pagination/pagination.component';
 import { ReceivedComponent } from './received/received.component';
 import { DraftComponent } from './draft/draft.component';
 import { TemplateComponent } from './template/template.component';
+import { AddAdditionalModalComponent } from './modal/add-additional-modal/add-additional-modal.component';
 
 
 
@@ -30,6 +31,7 @@ import { TemplateComponent } from './template/template.component';
     ReceivedComponent,
     DraftComponent,
     TemplateComponent,
+    AddAdditionalModalComponent,
    
 
   ],

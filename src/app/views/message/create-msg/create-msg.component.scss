@@ -627,6 +627,11 @@
         @include rem-fallback(min-height,44);
         
     }
+    .search-input{
+        i{
+            top:8px !important;
+        }
+    }
 }
 
 
