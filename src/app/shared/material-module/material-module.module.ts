@@ -14,6 +14,9 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+// import { MatMomentDateModule } from "@angular/material-moment-adapter";
 
 
 
@@ -34,7 +37,9 @@ import {MatRadioModule} from '@angular/material/radio';
     MatPaginatorModule,
     MatStepperModule,
     MatFormFieldModule,
-    MatRadioModule
+    MatRadioModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
 
  
   ],
@@ -52,7 +57,9 @@ import {MatRadioModule} from '@angular/material/radio';
     MatPaginatorModule,
     MatStepperModule,
     MatFormFieldModule,
-    MatRadioModule
+    MatRadioModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   
   ]
 })

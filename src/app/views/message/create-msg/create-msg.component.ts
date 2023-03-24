@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import { AddAdditionalModalComponent } from 'src/app/shared/modal/add-additional-modal/add-additional-modal.component';
+import { SheduleModalComponent } from 'src/app/shared/modal/shedule-modal/shedule-modal.component';
+
 
 @Component({
   selector: 'app-create-msg',
@@ -16,6 +18,9 @@ export class CreateMsgComponent {
   constructor(public dialog: MatDialog) {}
   openDialog() {
     const dialogRef = this.dialog.open(AddAdditionalModalComponent);
+  }
+  openDialog_shedule() {
+    const dialogRef = this.dialog.open(SheduleModalComponent);
   }
 
 }

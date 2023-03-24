@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import { LogoutModalComponent } from '../modal/logout-modal/logout-modal.component';
 
 @Component({
   selector: 'app-side-bar',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class SideBarComponent {
   showFiller = false;
+  constructor(public dialog: MatDialog) {}
+  openDialog_logout() {
+    const dialogRef = this.dialog.open(LogoutModalComponent);
+  }
 }

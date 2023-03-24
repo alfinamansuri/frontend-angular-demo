@@ -13,6 +13,8 @@ import { ReceivedComponent } from './received/received.component';
 import { DraftComponent } from './draft/draft.component';
 import { TemplateComponent } from './template/template.component';
 import { AddAdditionalModalComponent } from './modal/add-additional-modal/add-additional-modal.component';
+import { SheduleModalComponent } from './modal/shedule-modal/shedule-modal.component';
+import { LogoutModalComponent } from './modal/logout-modal/logout-modal.component';
 
 
 
@@ -32,6 +34,8 @@ import { AddAdditionalModalComponent } from './modal/add-additional-modal/add-ad
     DraftComponent,
     TemplateComponent,
     AddAdditionalModalComponent,
+    SheduleModalComponent,
+    LogoutModalComponent,
    
 
   ],
@@ -54,6 +58,8 @@ import { AddAdditionalModalComponent } from './modal/add-additional-modal/add-ad
     ReceivedComponent,
     DraftComponent,
     TemplateComponent,
+    SheduleModalComponent,
+    LogoutModalComponent,
    
 
     
